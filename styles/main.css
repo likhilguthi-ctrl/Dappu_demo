@@ -252,6 +252,17 @@ html { scrollbar-width: thin; scrollbar-color: #333333 #000000; }
   perspective: 1400px;
   background: transparent;
   border-radius: 20px;
+  touch-action: pan-y;
+  cursor: grab;
+  user-select: none;
+}
+
+.hero-carousel-stage.is-dragging {
+  cursor: grabbing;
+}
+
+.hero-carousel-stage.is-dragging .hero-slide-card {
+  user-select: none;
 }
 
 /* Carousel Navigation Arrows: Completely Removed as requested */
@@ -259,12 +270,12 @@ html { scrollbar-width: thin; scrollbar-color: #333333 #000000; }
   display: none !important;
 }
 
-/* Individual Slide Cards in 3D Sectioned Deck (20% Larger Width & Scale) */
+/* Individual Slide Cards in 3D Sectioned Deck */
 .hero-slide-card {
   position: absolute;
   top: 0;
   left: 50%;
-  width: clamp(768px, 86%, 1260px);
+  width: clamp(700px, 80%, 1160px);
   height: 100%;
   border-radius: 18px;
   overflow: hidden;
@@ -272,6 +283,7 @@ html { scrollbar-width: thin; scrollbar-color: #333333 #000000; }
   background: #0D0D0D;
   border: 1px solid rgba(255, 255, 255, 0.14);
   box-shadow: 0 16px 44px rgba(0, 0, 0, 0.85);
+  touch-action: pan-y;
   transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
               opacity 0.5s ease,
               filter 0.5s ease,
@@ -293,36 +305,38 @@ html { scrollbar-width: thin; scrollbar-color: #333333 #000000; }
 
 /* Previous card: tucked behind on the left, clearly visible peeking box */
 .hero-slide-card.is-prev {
-  transform: translate3d(calc(-50% - 88%), 0, -50px) scale(0.9);
-  z-index: 5;
+  transform: translate3d(calc(-50% - 84%), 0, -45px) scale(0.9);
+  z-index: 6;
   opacity: 0.85;
   filter: brightness(0.88) contrast(1.05);
   border-color: rgba(255, 255, 255, 0.22);
   box-shadow: 0 16px 44px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(255, 255, 255, 0.12);
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .hero-slide-card.is-prev:hover {
   opacity: 0.95;
   filter: brightness(0.98) contrast(1.08);
-  transform: translate3d(calc(-50% - 86%), 0, -25px) scale(0.92);
+  transform: translate3d(calc(-50% - 82%), 0, -20px) scale(0.92);
 }
 
 /* Next card: tucked behind on the right, clearly visible peeking box */
 .hero-slide-card.is-next {
-  transform: translate3d(calc(-50% + 88%), 0, -50px) scale(0.9);
-  z-index: 5;
+  transform: translate3d(calc(-50% + 84%), 0, -45px) scale(0.9);
+  z-index: 6;
   opacity: 0.85;
   filter: brightness(0.88) contrast(1.05);
   border-color: rgba(255, 255, 255, 0.22);
   box-shadow: 0 16px 44px rgba(0, 0, 0, 0.9), 0 0 0 1px rgba(255, 255, 255, 0.12);
   cursor: pointer;
+  pointer-events: auto;
 }
 
 .hero-slide-card.is-next:hover {
   opacity: 0.95;
   filter: brightness(0.98) contrast(1.08);
-  transform: translate3d(calc(-50% + 86%), 0, -25px) scale(0.92);
+  transform: translate3d(calc(-50% + 82%), 0, -20px) scale(0.92);
 }
 
 /* Hidden queued cards off-stage */

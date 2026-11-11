@@ -495,6 +495,14 @@
         if (heroItem) openDetailsModal(heroItem, false);
       });
 
+      // Pause auto-advance timer only when user actively hovers on action buttons
+      card.querySelector('.hero-actions-row')?.addEventListener('mouseenter', () => {
+        stopHeroTimer();
+      });
+      card.querySelector('.hero-actions-row')?.addEventListener('mouseleave', () => {
+        startHeroTimer();
+      });
+
       card.querySelectorAll('.hero-indicator-dot').forEach((dot) => {
         dot.addEventListener('click', (e) => {
           e.stopPropagation();
@@ -1093,7 +1101,7 @@
       elements.searchToggleBtn.style.display = 'flex';
     });
 
-    // Hero Carousel Arrows
+    // Hero Carousel Arrows (retained for programmatic/fallback use)
     elements.heroArrowLeft?.addEventListener('click', (e) => {
       e.stopPropagation();
       prevHero();
@@ -1104,44 +1112,133 @@
       nextHero();
     });
 
-    // Touch Swipe Gesture Navigation for Hero Carousel on Mobile
-    let touchStartX = 0;
-    let touchStartY = 0;
-    let touchEndX = 0;
-    let touchEndY = 0;
-
+    // ── Unified Drag, Swipe, Wheel & Keyboard Controller for Hero Carousel ──
     const heroStage = elements.heroCarouselStage || document.getElementById('heroCarouselStage');
     if (heroStage) {
-      heroStage.addEventListener('touchstart', (e) => {
-        if (!e.changedTouches || e.changedTouches.length === 0) return;
-        touchStartX = e.changedTouches[0].screenX;
-        touchStartY = e.changedTouches[0].screenY;
+      let isDown = false;
+      let startX = 0;
+      let startY = 0;
+      let currentX = 0;
+      let isDrag = false;
+      let hasTriggered = false;
+
+      const handleStart = (clientX, clientY, target) => {
+        if (target && target.closest('.hero-action-play, .hero-action-info, .hero-indicator-dot')) return;
+        isDown = true;
+        isDrag = false;
+        hasTriggered = false;
+        startX = clientX;
+        startY = clientY;
+        currentX = clientX;
         stopHeroTimer();
-      }, { passive: true });
+      };
 
-      heroStage.addEventListener('touchend', (e) => {
-        if (!e.changedTouches || e.changedTouches.length === 0) return;
-        touchEndX = e.changedTouches[0].screenX;
-        touchEndY = e.changedTouches[0].screenY;
-        
-        const diffX = touchEndX - touchStartX;
-        const diffY = touchEndY - touchStartY;
+      const handleMove = (clientX, clientY) => {
+        if (!isDown || hasTriggered) return;
+        currentX = clientX;
+        const diffX = currentX - startX;
+        const diffY = clientY - startY;
 
-        // If swipe is primarily horizontal and > 36px threshold
-        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 36) {
+        // Verify primary horizontal intention
+        if (Math.abs(diffX) > 10 && Math.abs(diffX) > Math.abs(diffY)) {
+          isDrag = true;
+          heroStage.classList.add('is-dragging');
+        }
+
+        // Trigger slide shift once threshold is reached
+        if (isDrag && Math.abs(diffX) > 42) {
+          hasTriggered = true;
           if (diffX < 0) {
-            nextHero(); // swiped left -> next
+            nextHero(); // drag left -> next slide
           } else {
-            prevHero(); // swiped right -> previous
+            prevHero(); // drag right -> prev slide
           }
         }
+      };
+
+      const handleEnd = () => {
+        if (!isDown) return;
+        isDown = false;
+        heroStage.classList.remove('is-dragging');
+        setTimeout(() => {
+          isDrag = false;
+        }, 80);
         startHeroTimer();
+      };
+
+      // Mouse drag handlers
+      heroStage.addEventListener('mousedown', (e) => {
+        if (e.button !== 0) return; // only primary left button
+        handleStart(e.clientX, e.clientY, e.target);
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        handleMove(e.clientX, e.clientY);
+      });
+
+      window.addEventListener('mouseup', handleEnd);
+
+      // Touch swipe handlers with full cancellation recovery
+      heroStage.addEventListener('touchstart', (e) => {
+        if (!e.touches || e.touches.length === 0) return;
+        handleStart(e.touches[0].clientX, e.touches[0].clientY, e.target);
       }, { passive: true });
+
+      heroStage.addEventListener('touchmove', (e) => {
+        if (!e.touches || e.touches.length === 0) return;
+        handleMove(e.touches[0].clientX, e.touches[0].clientY);
+      }, { passive: true });
+
+      heroStage.addEventListener('touchend', handleEnd, { passive: true });
+      heroStage.addEventListener('touchcancel', handleEnd, { passive: true });
+
+      // Suppress accidental card clicks if a drag operation was completed
+      heroStage.addEventListener('click', (e) => {
+        if (isDrag) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      }, true);
+
+      // Horizontal trackpad swipe & Shift+MouseWheel scrolling
+      let wheelThrottle = 0;
+      heroStage.addEventListener('wheel', (e) => {
+        const isHorizontal = Math.abs(e.deltaX) > Math.abs(e.deltaY) && Math.abs(e.deltaX) > 18;
+        const isShiftVertical = e.shiftKey && Math.abs(e.deltaY) > 18;
+        if (isHorizontal || isShiftVertical) {
+          e.preventDefault();
+          const now = Date.now();
+          if (now - wheelThrottle > 420) {
+            wheelThrottle = now;
+            const delta = isHorizontal ? e.deltaX : e.deltaY;
+            if (delta > 0) {
+              nextHero();
+            } else {
+              prevHero();
+            }
+          }
+        }
+      }, { passive: false });
     }
 
-    // Pause hero timer on mouse hover
-    elements.heroSection?.addEventListener('mouseenter', stopHeroTimer);
-    elements.heroSection?.addEventListener('mouseleave', startHeroTimer);
+    // Auto-advance visibility lifecycle (pause in background tab, resume on return)
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        stopHeroTimer();
+      } else {
+        resetHeroTimer();
+      }
+    });
+
+    // Keyboard navigation (Left / Right Arrow)
+    document.addEventListener('keydown', (e) => {
+      if (state.activeModalItem || e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+      if (e.key === 'ArrowRight') {
+        nextHero();
+      } else if (e.key === 'ArrowLeft') {
+        prevHero();
+      }
+    });
 
     // Modal Events
     elements.modalCloseBtn?.addEventListener('click', closeDetailsModal);
