@@ -1,0 +1,1086 @@
+{
+  "hero_section": [
+    {
+      "id": "hero_manda_krishna_madiga",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Manda Krishna Madiga",
+          "description": "Three decades of unwavering struggle. The defining story behind the historic SC categorization movement led by Manda Krishna Madiga.",
+          "assets": {
+            "16_9": "./assets/madiga/banners/en/manda_krishna_madiga_banner.jpg",
+            "2_3": "./assets/madiga/posters/en/manda_krishna_madiga.jpg",
+            "3_2": "./assets/madiga/banners/en/manda_krishna_madiga_banner.jpg"
+          }
+        },
+        {
+          "language": "te",
+          "title": "మంద కృష్ణ మాదిగ",
+          "description": "మూడు దశాబ్దాలుగా ఒకే పోరాటం! ఎస్సీ వర్గీకరణ ఉద్యమ వెనుక చరిత్ర, అలుపెరగని దీక్ష మరియు ప్రజా పోరాటం.",
+          "assets": {
+            "16_9": "./assets/madiga/banners/te/manda_krishna_madiga_banner.jpg",
+            "2_3": "./assets/madiga/posters/te/manda_krishna_madiga.jpg",
+            "3_2": "./assets/madiga/banners/te/manda_krishna_madiga_banner.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hero_tenneti_krishna_prasad",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Tenneti Krishna Prasad, IPS",
+          "description": "Former DGP, LIDCAP Chairman, and beacon of administrative justice. An inspiring journey of discipline and community empowerment.",
+          "assets": {
+            "16_9": "./assets/madiga/banners/en/tenneti_krishna_prasad_banner.jpg",
+            "2_3": "./assets/madiga/posters/en/tenneti_krishna_prasad.jpg",
+            "3_2": "./assets/madiga/banners/en/tenneti_krishna_prasad_banner.jpg"
+          }
+        },
+        {
+          "language": "te",
+          "title": "తెన్నేటి కృష్ణ ప్రసాద్, ఐపీఎస్",
+          "description": "లిడ్ క్యాప్ దిక్సూచి తెన్నేటి! మాజీ డీజీపీ మరియు సమాజ సాధికారత మార్గదర్శి యొక్క సమగ్ర జీవన ప్రస్థానం.",
+          "assets": {
+            "16_9": "./assets/madiga/banners/te/tenneti_krishna_prasad_banner.jpg",
+            "2_3": "./assets/madiga/posters/te/tenneti_krishna_prasad.jpg",
+            "3_2": "./assets/madiga/banners/te/tenneti_krishna_prasad_banner.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hero_ks_jawahar",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "K.S. Jawahar",
+          "description": "From grassroots educator to cabinet minister: SC Commission Chairman K.S. Jawahar on transformative public service.",
+          "assets": {
+            "16_9": "./assets/madiga/banners/en/ks_jawahar_banner.jpg",
+            "2_3": "./assets/madiga/posters/en/ks_jawahar.jpg",
+            "3_2": "./assets/madiga/banners/en/ks_jawahar_banner.jpg"
+          }
+        },
+        {
+          "language": "te",
+          "title": "కే.ఎస్. జవహర్",
+          "description": "ఉపాధ్యాయుడి నుంచి మంత్రి వరకు! ఎస్సీ కమిషన్ చైర్మన్‌తో ప్రత్యేక ఇంటర్వ్యూ మరియు ప్రజా సేవ.",
+          "assets": {
+            "16_9": "./assets/madiga/banners/te/ks_jawahar_banner.jpg",
+            "2_3": "./assets/madiga/posters/te/ks_jawahar.jpg",
+            "3_2": "./assets/madiga/banners/te/ks_jawahar_banner.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hero_joopaka_subhadra",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Joopaka Subhadra",
+          "description": "Pioneering voice of Dalit feminist literature, poetry, and identity. Reflecting on three decades of creative assertion and social change.",
+          "assets": {
+            "16_9": "./assets/madiga/banners/en/joopaka_subhadra_banner.jpg",
+            "2_3": "./assets/madiga/posters/en/joopaka_subhadra.jpg",
+            "3_2": "./assets/madiga/banners/en/joopaka_subhadra_banner.jpg"
+          }
+        },
+        {
+          "language": "te",
+          "title": "జూపాక సుభద్ర",
+          "description": "మా కథలు... మా అక్షరాలు! మాదిగ మహిళల అస్తిత్వం, దళిత సాహిత్యం మరియు మూడు దశాబ్దాల అనుభవాలు.",
+          "assets": {
+            "16_9": "./assets/madiga/banners/te/joopaka_subhadra_banner.jpg",
+            "2_3": "./assets/madiga/posters/te/joopaka_subhadra.jpg",
+            "3_2": "./assets/madiga/banners/te/joopaka_subhadra_banner.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hero_undavalli_sridevi",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Dr. Undavalli Sridevi",
+          "description": "From clinical healer to fearless legislator: Dr. Undavalli Sridevi shares her journey in healthcare and social politics.",
+          "assets": {
+            "16_9": "./assets/madiga/banners/en/undavalli_sridevi_banner.jpg",
+            "2_3": "./assets/madiga/posters/en/undavalli_sridevi.jpg",
+            "3_2": "./assets/madiga/banners/en/undavalli_sridevi_banner.jpg"
+          }
+        },
+        {
+          "language": "te",
+          "title": "డా. ఉండవల్లి శ్రీదేవి",
+          "description": "వైద్యురాలి నుంచి రాజకీయ నాయకురాలిగా... రాజనీతి డాక్టరమ్మ ప్రత్యేక ప్రస్థానం మరియు సేవా తత్వాలు.",
+          "assets": {
+            "16_9": "./assets/madiga/banners/te/undavalli_sridevi_banner.jpg",
+            "2_3": "./assets/madiga/posters/te/undavalli_sridevi.jpg",
+            "3_2": "./assets/madiga/banners/te/undavalli_sridevi_banner.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hero_jayadhir_thirumala_rao",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Prof. Jayadhir Thirumala Rao",
+          "description": "Cultural architect and folklorist. Preserving indigenous musical instruments, tribal oral epics, and Dalit cultural heritage.",
+          "assets": {
+            "16_9": "./assets/madiga/banners/en/jayadhir_thirumala_rao_banner.jpg",
+            "2_3": "./assets/madiga/posters/en/jayadhir_thirumala_rao.jpg",
+            "3_2": "./assets/madiga/banners/en/jayadhir_thirumala_rao_banner.jpg"
+          }
+        },
+        {
+          "language": "te",
+          "title": "జయధీర్ తిరుమలరావు",
+          "description": "కళల బ్రహ్మ జయధీరుడు! ఆదివాసీ మరియు దళిత సంగీత వారసత్వ సంరక్షణ ప్రయాణం.",
+          "assets": {
+            "16_9": "./assets/madiga/banners/te/jayadhir_thirumala_rao_banner.jpg",
+            "2_3": "./assets/madiga/posters/te/jayadhir_thirumala_rao.jpg",
+            "3_2": "./assets/madiga/banners/te/jayadhir_thirumala_rao_banner.jpg"
+          }
+        }
+      ]
+    }
+  ],
+  "content_section": [
+    {
+      "id": "sec_av",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Community Personalities",
+          "description": "Profiles and interviews featuring prominent Madiga leaders, ministers, and public figures."
+        },
+        {
+          "language": "te",
+          "title": "సమాజ ప్రముఖులు",
+          "description": "మాదిగ సమాజ నాయకులు, మంత్రులు, ప్రజా ప్రతినిధుల ప్రత్యేక పరిచయాలు, ముఖాముఖులు."
+        }
+      ],
+      "description": "Community Personalities",
+      "content": [
+        {
+          "random_value": "item_manda_krishna_madiga",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Manda Krishna Madiga",
+              "description": "Three decades of unwavering struggle: The defining story behind the historic SC categorization movement.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/manda_krishna_madiga.jpg",
+                "16_9": "./assets/madiga/banners/en/manda_krishna_madiga_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మంద కృష్ణ మాదిగ",
+              "description": "మూడు దశాబ్దాలుగా ఒకే పోరాటం! ఎస్సీ వర్గీకరణ ఉద్యమం వెనుక కథ.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/manda_krishna_madiga.jpg",
+                "16_9": "./assets/madiga/banners/te/manda_krishna_madiga_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_varla_ramaiah",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Varla Ramaiah",
+              "description": "Senior leader and fearless voice of the community. A lifetime in political service and civil rights advocacy.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/varla_ramaiah.jpg",
+                "16_9": "./assets/madiga/banners/en/varla_ramaiah_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "వర్ల రామయ్య",
+              "description": "ఆది ఆంధ్రుల జాతి రత్నం! వర్ల రామయ్య రాజకీయ ప్రస్థానం మరియు పోరాటాలు.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/varla_ramaiah.jpg",
+                "16_9": "./assets/madiga/banners/te/varla_ramaiah_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_tenneti_krishna_prasad",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Tenneti Krishna Prasad, IPS",
+              "description": "Former DGP & LIDCAP Chairman. An inspiring legacy of administrative justice and public leadership.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/tenneti_krishna_prasad.jpg",
+                "16_9": "./assets/madiga/banners/en/tenneti_krishna_prasad_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "తెన్నేటి కృష్ణ ప్రసాద్, ఐపీఎస్",
+              "description": "లిడ్ క్యాప్ దిక్సూచి తెన్నేటి! ఉన్నత పోలీస్ అధికారిగా ప్రజా సేవ.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/tenneti_krishna_prasad.jpg",
+                "16_9": "./assets/madiga/banners/te/tenneti_krishna_prasad_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_ks_jawahar",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "K.S. Jawahar",
+              "description": "From dedicated educator to cabinet minister and SC Commission Chairman. Inspiring the next generation.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/ks_jawahar.jpg",
+                "16_9": "./assets/madiga/banners/en/ks_jawahar_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "కే.ఎస్. జవహర్",
+              "description": "దార్శనికుడు జవహరుడు! విద్యా రంగానికి మరియు ప్రజా సేవకు అంకితం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/ks_jawahar.jpg",
+                "16_9": "./assets/madiga/banners/te/ks_jawahar_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_joopaka_subhadra",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Joopaka Subhadra",
+              "description": "Iconic poet, writer, and Dalit feminist voice. Chronicling identity, dignity, and resistance.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/joopaka_subhadra.jpg",
+                "16_9": "./assets/madiga/banners/en/joopaka_subhadra_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "జూపాక సుభద్ర",
+              "description": "మా కథలు... మా అక్షరాలు! మాదిగ మహిళల అస్తిత్వం & దళిత సాహిత్యం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/joopaka_subhadra.jpg",
+                "16_9": "./assets/madiga/banners/te/joopaka_subhadra_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_undavalli_sridevi",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Dr. Undavalli Sridevi",
+              "description": "From physician to prominent politician: A commitment to healthcare, women's welfare, and social reform.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/undavalli_sridevi.jpg",
+                "16_9": "./assets/madiga/banners/en/undavalli_sridevi_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "డా. ఉండవల్లి శ్రీదేవి",
+              "description": "రాజనీతి డాక్టరమ్మ! ప్రజల ఆరోగ్యం మరియు సమాజ సంక్షేమం కోసం కృషి.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/undavalli_sridevi.jpg",
+                "16_9": "./assets/madiga/banners/te/undavalli_sridevi_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_jayadhir_thirumala_rao",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Prof. Jayadhir Thirumala Rao",
+              "description": "Legendary folklorist and researcher documenting indigenous Telugu and Dalit musical treasures.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/jayadhir_thirumala_rao.jpg",
+                "16_9": "./assets/madiga/banners/en/jayadhir_thirumala_rao_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "జయధీర్ తిరుమలరావు",
+              "description": "కళల బ్రహ్మ జయధీరుడు! సంగీత మరియు సంస్కృతి వారసత్వ సంరక్షణ.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/jayadhir_thirumala_rao.jpg",
+                "16_9": "./assets/madiga/banners/te/jayadhir_thirumala_rao_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_adunuri_laxman_kumar",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Minister Adunuri Laxman Kumar",
+              "description": "A powerful chronicle of political rise and dedication to community upliftment and youth empowerment.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/adunuri_laxman_kumar.jpg",
+                "16_9": "./assets/madiga/banners/en/adunuri_laxman_kumar_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మంత్రి ఆదునూరి లక్ష్మణ్ కుమార్",
+              "description": "బానిస విముక్తి కై లక్ష్మణరేఖ! ప్రజా పోరాటం.. బానిసత్వ పతనం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/adunuri_laxman_kumar.jpg",
+                "16_9": "./assets/madiga/banners/te/adunuri_laxman_kumar_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_darla_venkateswara_rao",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Prof. Darla Venkateswara Rao",
+              "description": "Academician, author, and University Professor shaping contemporary literary discourse.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/darla_venkateswara_rao.jpg",
+                "16_9": "./assets/madiga/banners/en/darla_venkateswara_rao_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "ప్రొఫెసర్ దార్ల వెంకటేశ్వరరావు",
+              "description": "ఆధునిక సాహిత్య భాండాగారం! పరిశోధన, సాహిత్యం మరియు విద్యా ప్రస్థానం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/darla_venkateswara_rao.jpg",
+                "16_9": "./assets/madiga/banners/te/darla_venkateswara_rao_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_kanta_rao",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Thota Laxmi Kanta Rao",
+              "description": "From humble roots in Jukkal to the State Assembly: The inspiring political journey.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/kanta_rao.jpg",
+                "16_9": "./assets/madiga/banners/en/kanta_rao_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "తోట లక్ష్మీ కాంతారావు",
+              "description": "మట్టిలో మాణిక్యం! జుక్కల్ నుంచి అసెంబ్లీ వరకు ప్రజా ప్రస్థానం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/kanta_rao.jpg",
+                "16_9": "./assets/madiga/banners/te/kanta_rao_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_vemula_veeresham",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Vemula Veeresham, MLA",
+              "description": "Grassroots activist who rose through mass movements to represent the people in the legislative assembly.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/vemula_veeresham.jpg",
+                "16_9": "./assets/madiga/banners/en/vemula_veeresham_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "వేముల వీరేశం",
+              "description": "ప్రజా ప్రస్థాన గొంతుక! నిరంతరం ప్రజలతో మమేకమైన నాయకత్వం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/vemula_veeresham.jpg",
+                "16_9": "./assets/madiga/banners/te/vemula_veeresham_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_kolikapudi_srinivasa_rao",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Kolikapudi Srinivasa Rao, MLA",
+              "description": "The driving force behind Tiruvuru development: Tireless advocacy for community and farmers.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/kolikapudi_srinivasa_rao.jpg",
+                "16_9": "./assets/madiga/banners/en/kolikapudi_srinivasa_rao_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "కార్యసాధకుడు కొలికపూడి",
+              "description": "కార్యసాధకుడు కొలికపూడి! తిరువూరు ప్రాంత సమగ్ర అభివృద్ధి సంకల్పం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/kolikapudi_srinivasa_rao.jpg",
+                "16_9": "./assets/madiga/banners/te/kolikapudi_srinivasa_rao_banner.jpg"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_songs",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Songs",
+          "description": "Soulful folk melodies, revolutionary songs, and rhythm of the Dappu celebrating Dalit and Madiga heritage."
+        },
+        {
+          "language": "te",
+          "title": "పాటలు",
+          "description": "దళిత, మాదిగ సాంస్కృతిక వారసత్వాన్ని, డప్పు దరువులను మరియు పోరాట స్ఫూర్తిని కీర్తించే జానపద, విప్లవ గీతాలు."
+        }
+      ],
+      "description": "Songs",
+      "content": [
+        {
+          "random_value": "item_song_1",
+          "age_rating": "U",
+          "duration": "4m 12s",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Comrade Dappu Ramesh Tribute Song",
+              "description": "In memory of Comrade Dappu Ramesh: Iconic JNM & CNM revolutionary folk anthem celebrating people’s resistance and cultural heritage.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/song_1.jpg",
+                "16_9": "./assets/madiga/banners/en/song_1_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "అమరుడు కామ్రేడ్ డప్పు రమేష్ అన్న స్మృతి లో",
+              "description": "అమరుడు కామ్రేడ్ డప్పు రమేష్ అన్న స్మృతి లో జేఎన్‌ఎం, సీఎన్‌ఎం సమర్పించిన సుప్రసిద్ధ ప్రజా విప్లవ పోరాట గీతం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/song_1.jpg",
+                "16_9": "./assets/madiga/banners/te/song_1_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_song_2",
+          "age_rating": "U",
+          "duration": "5m 28s",
+          "year": "2023",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "O Red Flag, Red Salutes to You",
+              "description": "A powerful, fiery revolutionary anthem dedicated to the red flag and grassroots martyrs by Janavani cultural wing.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/song_2.jpg",
+                "16_9": "./assets/madiga/banners/en/song_2_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "ఓ అరుణ పతాకమా నీకివిగో రెడ్ సెల్యూట్స్",
+              "description": "రక్తసిక్త ఎర్రజెండాకు, ఉద్యమ అమరవీరులకు సమర్పించిన ఉద్వేగభరిత విప్లవ నివాళి గీతం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/song_2.jpg",
+                "16_9": "./assets/madiga/banners/te/song_2_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_song_3",
+          "age_rating": "U",
+          "duration": "3m 45s",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Madiga Dandora Cultural Troupe",
+              "description": "The roaring rhythm of Dappu and Daruvu: vibrant community celebration of indigenous folk drums and Telangana rhythms.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/song_3.jpg",
+                "16_9": "./assets/madiga/banners/en/song_3_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మాదిగ దండోరా దళం - డప్పు, దరువు, సప్పుడు",
+              "description": "మాదిగ దండోరా కళాకారుల డప్పు దరువు, శ్రామిక జన చప్పుడు మరియు సంస్కృతి ఉత్సవం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/song_3.jpg",
+                "16_9": "./assets/madiga/banners/te/song_3_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_song_4",
+          "age_rating": "U",
+          "duration": "4m 50s",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Aadudam Dappulo Daruveyyara",
+              "description": "High-energy folk dance track bringing the stage alive with the thunderous resonance of Telangana daph drums.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/song_4.jpg",
+                "16_9": "./assets/madiga/banners/en/song_4_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "ఆడుదాం డప్పులో దరువెయ్యరా... (జానపద గీతం)",
+              "description": "వేదికను హోరెత్తించే డప్పు దరువుల జానపద నృత్య గీతం, శ్రామిక జన ఉత్సాహం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/song_4.jpg",
+                "16_9": "./assets/madiga/banners/te/song_4_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_song_5",
+          "age_rating": "U/A 13+",
+          "duration": "5m 15s",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Dalitha Pululamma - Tigers of Resistance",
+              "description": "Martyrs memorial anthem honoring the brave souls of the Dalit resistance movement at Rudhirakshetram.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/song_5.jpg",
+                "16_9": "./assets/madiga/banners/en/song_5_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "దళిత పులులమ్మా (రుధిరక్షేత్రం స్మృతి గీతం)",
+              "description": "రుధిరక్షేత్రం అమరుల స్మృతిలో దళిత ప్రతిఘటన పోరాట వీరులను స్మరించుకునే స్ఫూర్తిదాయక గీతం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/song_5.jpg",
+                "16_9": "./assets/madiga/banners/te/song_5_banner.jpg"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_podcast",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Podcasts & Interviews",
+          "description": "Exclusive in-depth studio podcast conversations with key architects and leaders of the Madiga movement."
+        },
+        {
+          "language": "te",
+          "title": "పాడ్‌కాస్ట్‌లు & ముఖాముఖులు",
+          "description": "ఎమ్మార్పీఎస్ ఉద్యమ నిర్మాతలు, దళిత నాయకులతో ప్రత్యేక సమగ్ర స్టూడియో సంభాషణలు మరియు ముఖాముఖులు."
+        }
+      ],
+      "description": "Podcasts",
+      "content": [
+        {
+          "random_value": "item_podcast_1",
+          "age_rating": "U",
+          "duration": "42m 18s",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "1994 – The Genesis of MRPS | Dandu Veerayya Madiga",
+              "description": "In-depth historical discussion with Dandu Veerayya Madiga on the seminal founding moments, ideology, and launch of MRPS in 1994.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/podcast_1.jpg",
+                "16_9": "./assets/madiga/banners/en/podcast_1_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "1994 – ఎమ్మార్పీఎస్ ఆవిర్భావం! | దండు వీరయ్య మాదిగ",
+              "description": "1994లో ఎమ్మార్పీఎస్ చారిత్రక ఆవిర్భావం, సైద్ధాంతిక పునాదులు మరియు తొలి ఉద్యమ ప్రస్థానంపై దండు వీరయ్య మాదిగతో సమగ్ర సంభాషణ.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/podcast_1.jpg",
+                "16_9": "./assets/madiga/banners/te/podcast_1_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_podcast_2",
+          "age_rating": "U",
+          "duration": "38m 45s",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "The Untold Story Behind Madiga Corporation | Kommuri Kanakarao Madiga",
+              "description": "Kommuri Kanakarao Madiga takes us backstage through the policy battles, administrative negotiations, and vision that established the Madiga Corporation.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/podcast_2.jpg",
+                "16_9": "./assets/madiga/banners/en/podcast_2_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మాదిగ కార్పొరేషన్ వెనుక అసలు కథ! | కొమ్మూరి కనకారావు మాదిగ",
+              "description": "మాదిగ కార్పొరేషన్ ఏర్పాటు వెనుక జరిగిన తెరవెనుక పోరాటాలు, విధాన నిర్ణయాలు మరియు కార్యాచరణపై కొమ్మూరి కనకారావు మాదిగ ప్రత్యేక విశ్లేషణ.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/podcast_2.jpg",
+                "16_9": "./assets/madiga/banners/te/podcast_2_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_podcast_3",
+          "age_rating": "U",
+          "duration": "45m 10s",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "How Was MRPS Formed in 1994? | Krupakar Madiga",
+              "description": "Founding recollections, crucial mobilization rallies, and grassroots organizing secrets revealed by leader Krupakar Madiga.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/podcast_3.jpg",
+                "16_9": "./assets/madiga/banners/en/podcast_3_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "1994లో ఎమ్మార్పీఎస్ ఎలా ఏర్పడింది? | కృపాకర్ మాదిగ",
+              "description": "1994లో ఉద్యమ పునాది పడిన రోజులు, సభలు, ప్రజల్లోకి ఉద్యమాన్ని తీసుకువెళ్లిన వ్యూహాలపై కృపాకర్ మాదిగ ప్రత్యక్ష అనుభవాలు.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/podcast_3.jpg",
+                "16_9": "./assets/madiga/banners/te/podcast_3_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_podcast_4",
+          "age_rating": "U",
+          "duration": "51m 30s",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "A Movement's History in Song | Dappu Ramesh",
+              "description": "Legendary cultural pioneer Dappu Ramesh shares how song, rhythm, and poetry sustained the heartbeat of the people's struggle for generations.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/podcast_4.jpg",
+                "16_9": "./assets/madiga/banners/en/podcast_4_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "ఆ పాటలో ఒక ఉద్యమ చరిత్ర ఉంది! | డప్పు రమేష్",
+              "description": "సంగీతం, కవిత్వం, డప్పు దరువు ఎలా ఉద్యమానికి జీవనాడిగా నిలిచాయో వివరించిన ప్రముఖ సాంస్కృతిక సారథి డప్పు రమేష్ అంతరంగం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/podcast_4.jpg",
+                "16_9": "./assets/madiga/banners/te/podcast_4_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_podcast_5",
+          "age_rating": "U",
+          "duration": "58m 20s",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "The Relentless Struggle for Rights | Manda Krishna Madiga",
+              "description": "A flagship exclusive interview with Manda Krishna Madiga on three decades of mobilization, SC classification battles, and future vision.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/podcast_5.jpg",
+                "16_9": "./assets/madiga/banners/en/podcast_5_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మాదిగల హక్కుల కోసం అలుపెరగని పోరాటం! | మంద కృష్ణ మాదిగ",
+              "description": "మూడు దశాబ్దాల ఉద్యమ ప్రస్థానం, ఎస్సీ వర్గీకరణ పోరు మరియు జాతి ఆత్మగౌరవ దిశపై మంద కృష్ణ మాదిగతో ప్రత్యేక ముఖాముఖి.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/podcast_5.jpg",
+                "16_9": "./assets/madiga/banners/te/podcast_5_banner.jpg"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_education",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Education",
+          "description": "Scholars, writers, and educators documenting heritage and empowering youth."
+        },
+        {
+          "language": "te",
+          "title": "విద్య & మేధావులు",
+          "description": "చరిత్ర పరిశోధకులు, విద్యావేత్తలు, రచయితల ప్రస్థానం మరియు స్ఫూర్తిదాయక ఆలోచనలు."
+        }
+      ],
+      "description": "Education",
+      "content": [
+        {
+          "random_value": "item_edu_gogu_shyamala",
+          "age_rating": "U/A 13+",
+          "duration": "48m",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "The Voice of Madiga Women: Gogu Shyamala",
+              "description": "Acclaimed Dalit feminist thinker and author Gogu Shyamala highlights rural Madiga women’s resistance, lived oral narratives, and cultural emancipation.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/education_1.jpg",
+                "16_9": "./assets/madiga/banners/en/education_1_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మాదిగ మహిళల గొంతుకగా... గోగు శ్యామల పోరాటం",
+              "description": "దళిత స్త్రీవాద రచయిత్రి, ఉద్యమ వైతాళికురాలు గోగు శ్యామల మాదిగ మహిళల ఆత్మగౌరవం, సాహిత్యం మరియు హక్కుల పోరాటం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/education_1.jpg",
+                "16_9": "./assets/madiga/banners/te/education_1_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_edu_endluri_sudhakar",
+          "age_rating": "U/A 13+",
+          "duration": "55m",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "A New Voice for Dalit Literature: Prof. Endluri Sudhakar",
+              "description": "Celebrating the monumental legacy of Prof. Endluri Sudhakar, whose pioneering poetry, research, and voice awakened Dalit consciousness across generations.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/education_2.jpg",
+                "16_9": "./assets/madiga/banners/en/education_2_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "దళిత సాహిత్యానికి కొత్త గొంతుక! ఎండ్లూరి సుధాకర్",
+              "description": "దళిత సాహిత్య వైతాళికుడు ప్రొఫెసర్ ఎండ్లూరి సుధాకర్ కవిత్వ సంపుటాలు, చారిత్రక పరిశోధనలు మరియు నూతన సాహిత్య ప్రస్థానం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/education_2.jpg",
+                "16_9": "./assets/madiga/banners/te/education_2_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_edu_darla",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Treasury of Modern Knowledge",
+              "description": "Prof. Darla Venkateswara Rao explores academic excellence, Dalit aesthetics, and research methodology.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/darla_venkateswara_rao.jpg",
+                "16_9": "./assets/madiga/banners/en/darla_venkateswara_rao_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "ఆధునిక సాహిత్య భాండాగారం",
+              "description": "ప్రొఫెసర్ దార్ల వెంకటేశ్వరరావు పరిశోధనా పత్రాలు మరియు సాహిత్య విశ్లేషణ.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/darla_venkateswara_rao.jpg",
+                "16_9": "./assets/madiga/banners/te/darla_venkateswara_rao_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_edu_joopaka",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Critique & Consciousness",
+              "description": "Joopaka Subhadra on critical pedagogy and empowering young women through reading and writing.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/joopaka_subhadra.jpg",
+                "16_9": "./assets/madiga/banners/en/joopaka_subhadra_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "చేతన - విద్యా వికాసం",
+              "description": "జూపాక సుభద్ర విద్యా మార్గదర్శకత్వం మరియు యువత ఆలోచనా ధోరణి.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/joopaka_subhadra.jpg",
+                "16_9": "./assets/madiga/banners/te/joopaka_subhadra_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_edu_tenneti",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Leadership & Public Service Preparation",
+              "description": "Tenneti Krishna Prasad IPS mentors aspirants on administrative exams, leadership, and integrity.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/tenneti_krishna_prasad.jpg",
+                "16_9": "./assets/madiga/banners/en/tenneti_krishna_prasad_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "సివిల్స్ మార్గదర్శనం",
+              "description": "సివిల్స్ మరియు పోటీ పరీక్షల అభ్యర్థులకు తెన్నేటి కృష్ణ ప్రసాద్ ఐపీఎస్ మార్గదర్శనం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/tenneti_krishna_prasad.jpg",
+                "16_9": "./assets/madiga/banners/te/tenneti_krishna_prasad_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_edu_jawahar",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Empowerment Through Learning",
+              "description": "K.S. Jawahar shares insights on government educational reforms and student scholarships.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/ks_jawahar.jpg",
+                "16_9": "./assets/madiga/banners/en/ks_jawahar_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "విద్యతోనే విముక్తి",
+              "description": "ఎస్సీ, ఎస్టీ విద్యార్థుల సంక్షేమ పథకాలు మరియు విద్యారంగ సంస్కరణలు.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/ks_jawahar.jpg",
+                "16_9": "./assets/madiga/banners/te/ks_jawahar_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_edu_varaprasad",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Cultural Literacy & History",
+              "description": "Comrade Varaprasad Wilson on remembering our social reformers and historical pioneers.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/varaprasad_wilson.jpg",
+                "16_9": "./assets/madiga/banners/en/varaprasad_wilson_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "సాంస్కృతిక చరిత్ర అధ్యయనం",
+              "description": "చరిత్రను తెలుసుకుందాం: సామాజిక విప్లవకారుల జీవిత విశేషాలు.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/varaprasad_wilson.jpg",
+                "16_9": "./assets/madiga/banners/te/varaprasad_wilson_banner.jpg"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_web",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Films & Series",
+          "description": "A collection of Telugu films and web series, from comedy and suspense to cinematic tributes."
+        },
+        {
+          "language": "te",
+          "title": "సినిమాలు & సిరీస్‌లు",
+          "description": "హాస్యం, ఉత్కంఠ నుంచి సినీ నివాళుల వరకు తెలుగు సినిమాలు, వెబ్ సిరీస్‌ల సమాహారం."
+        }
+      ],
+      "description": "Films & Series",
+      "content": [
+        {
+          "random_value": "item_film_manda_docu",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Mahaajana: 30 Years of Struggle",
+              "description": "A landmark cinematic documentary tracing the roots of the categorization movement.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/manda_krishna_madiga.jpg",
+                "16_9": "./assets/madiga/banners/en/manda_krishna_madiga_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మహాజన: 30 ఏళ్ల ఉద్యమ శిఖరం",
+              "description": "మంద కృష్ణ మాదిగ నాయకత్వంలో సాగిన మూడు దశాబ్దాల చారిత్రాత్మక ఉద్యమ డాక్యుమెంటరీ.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/manda_krishna_madiga.jpg",
+                "16_9": "./assets/madiga/banners/te/manda_krishna_madiga_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_film_tenneti",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "The Compass of Duty",
+              "description": "An inspiring biographical docudrama on IPS Tenneti Krishna Prasad's policing innovations.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/tenneti_krishna_prasad.jpg",
+                "16_9": "./assets/madiga/banners/en/tenneti_krishna_prasad_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "కర్తవ్య దిక్సూచి",
+              "description": "తెన్నేటి కృష్ణ ప్రసాద్ ఐపీఎస్ జీవిత కథ ఆధారంగా రూపొందించిన డాక్యు-డ్రామా.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/tenneti_krishna_prasad.jpg",
+                "16_9": "./assets/madiga/banners/te/tenneti_krishna_prasad_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_film_undavalli",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Rajaneethi Doctoramma",
+              "description": "The courageous life journey of Dr. Undavalli Sridevi bridging medicine and politics.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/undavalli_sridevi.jpg",
+                "16_9": "./assets/madiga/banners/en/undavalli_sridevi_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "రాజనీతి డాక్టరమ్మ: The Healer",
+              "description": "డాక్టర్ ఉండవల్లి శ్రీదేవి జీవితం ఆధారంగా ప్రత్యేక కథనం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/undavalli_sridevi.jpg",
+                "16_9": "./assets/madiga/banners/te/undavalli_sridevi_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_film_vemula",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Praja Prasthanam",
+              "description": "The people's leader: Vemula Veeresham's journey from rural grassroots to the state assembly.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/vemula_veeresham.jpg",
+                "16_9": "./assets/madiga/banners/en/vemula_veeresham_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "ప్రజా ప్రస్థానం",
+              "description": "వేముల వీరేశం రాజకీయ పోరాటాల దృశ్యరూపం.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/vemula_veeresham.jpg",
+                "16_9": "./assets/madiga/banners/te/vemula_veeresham_banner.jpg"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "item_film_bonela",
+          "age_rating": "U/A 13+",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Nippu Tunaka: Spark of Youth",
+              "description": "Bonela Vijay Chandra's inspiring political entry and assembly debates for social dignity.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/en/bonela_vijay_chandra.jpg",
+                "16_9": "./assets/madiga/banners/en/bonela_vijay_chandra_banner.jpg"
+              }
+            },
+            {
+              "language": "te",
+              "title": "నా జాతి నిప్పు తునక",
+              "description": "శాసనసభలో యువ ప్రజా గొంతుక బోనెల విజయ చంద్ర డాక్యుమెంటరీ.",
+              "assets": {
+                "2_3": "./assets/madiga/posters/te/bonela_vijay_chandra.jpg",
+                "16_9": "./assets/madiga/banners/te/bonela_vijay_chandra_banner.jpg"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

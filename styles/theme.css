@@ -1,0 +1,136 @@
+/**
+ * Master Brand & Theme Tokens — Netflix-style dark UI with a GOLD accent
+ * Neutral near-black surfaces (#141414), white/grey text, gold (#F5B301) brand colour.
+ */
+:root {
+  /* Brand colours — gold / yellow (replaces the old royal blue) */
+  --tenant-primary: #F5B301;
+  --tenant-primary-hover: #FFC933;
+  --tenant-primary-active: #D99A00;
+  --tenant-primary-rgb: 245, 179, 1;
+  --tenant-primary-light: #FFD966;
+  --tenant-primary-dark: #B8860B;
+  --tenant-primary-gradient: linear-gradient(135deg, #FFC933 0%, #F5B301 55%, #D99A00 100%);
+  --tenant-primary-glow: 0 0 24px rgba(245, 179, 1, 0.35);
+
+  /* Secondary & accent */
+  --secondary: #FFD966;
+  --color-secondary: #FFD966;
+  --tenant-accent: #F5B301;
+  --tenant-accent-rgb: 245, 179, 1;
+  --color-primary: #F5B301;
+  --color-accent: #F5B301;
+
+  --font-family-base: 'Inter', 'Helvetica Neue', Helvetica, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family: var(--font-family-base);
+  --font-family-heading: var(--font-family-base);
+  --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  --font-size-xs: 11px;
+  --font-size-sm: 13px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+  --font-size-4xl: 38px;
+  --font-size-hero: 48px;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 800;
+  --font-weight-heading: 700;
+  --font-weight-body: 400;
+
+  --line-height-tight: 1.2;
+  --line-height-base: 1.5;
+  --line-height-relaxed: 1.75;
+  --letter-spacing-tight: -0.01em;
+  --letter-spacing-base: 0;
+  --letter-spacing-wide: 0.04em;
+  --letter-spacing-widest: 0.1em;
+
+  /* Typography colours (Netflix greys) */
+  --text-primary: #E5E5E5;
+  --color-text: #E5E5E5;
+  --text-secondary: #B3B3B3;
+  --color-text-secondary: #B3B3B3;
+  --text-muted: #808080;
+  --color-text-muted: #808080;
+  --text-subtle: #6B6B6B;
+  --text-heading: #FFFFFF;
+  --text-brand: #F5B301;
+  --text-on-brand: #141414;
+  --text-disabled: #707070;
+  --text-inverse: #141414;
+
+  /* Background surfaces — True Deep Black UI */
+  --bg-body: #000000;
+  --color-background: #000000;
+  --bg-surface: #111111;
+  --color-surface: #111111;
+  --bg-card: #161616;
+  --bg-card-hover: #222222;
+  --bg-elevated: #1A1A1A;
+  --bg-input: #262626;
+  --bg-glass: rgba(0, 0, 0, 0.75);
+  --bg-header: #000000;
+  --bg-footer: #000000;
+  --bg-overlay: rgba(0, 0, 0, 0.85);
+
+  /* Borders */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-default: rgba(255, 255, 255, 0.2);
+  --color-border: rgba(255, 255, 255, 0.2);
+  --border-strong: rgba(255, 255, 255, 0.4);
+  --border-brand: #F5B301;
+  --border-input: #8C8C8C;
+  --border-input-focus: #F5B301;
+  --divider-color: rgba(255, 255, 255, 0.1);
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 48px;
+
+  /* Netflix uses small, crisp corner radii */
+  --radius-xs: 2px;
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-xl: 6px;
+  --radius-xxl: 8px;
+  --radius-2xl: 8px;
+  --radius-full: 9999px;
+  --radius-card: 6px;
+  --radius-button: 4px;
+  --radius-input: 4px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.6);
+  --shadow-card-hover: 0 14px 30px rgba(0, 0, 0, 0.75);
+  --shadow-elevated: 0 16px 36px rgba(0, 0, 0, 0.85);
+  --shadow-modal: 0 3px 10px rgba(0, 0, 0, 0.75);
+  --shadow-glow: 0 0 24px rgba(245, 179, 1, 0.35);
+
+  /* Semantic feedback */
+  --color-success: #46D369;      /* Netflix "match" green */
+  --color-warning: #F5B301;
+  --color-error: #E50914;
+  --color-info: #FFD966;
+
+  --layout-content-max-width: 1920px;
+  --content-max-width: 1920px;
+  --layout-page-padding: 4vw;
+  --layout-header-height: 68px;
+  --navbar-height: 68px;
+  --theme-mode: dark;
+}
