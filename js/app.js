@@ -28,7 +28,7 @@
   }
 
   // ── 2. Cinematic SVG Poster Fallback Generator ────────────────────────
-  function createFallbackPosterSvg(title, subtitle = 'Community OTT') {
+  function createFallbackPosterSvg(title, subtitle = 'The Dappu OTT') {
     const cleanTitle = (title || 'Featured Title').replace(/[<>&"]/g, '');
     const cleanSubtitle = subtitle.replace(/[<>&"]/g, '');
     const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%"><defs><linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2B2B2B"/><stop offset="50%" stop-color="#181818"/><stop offset="100%" stop-color="#141414"/></linearGradient><radialGradient id="goldGlow" cx="50%" cy="30%" r="50%"><stop offset="0%" stop-color="#F5B301" stop-opacity="0.35"/><stop offset="100%" stop-color="#F5B301" stop-opacity="0"/></radialGradient></defs><rect width="400" height="600" fill="url(#bgGrad)"/><rect width="400" height="600" fill="url(#goldGlow)"/><circle cx="200" cy="240" r="64" fill="#202020" stroke="#F5B301" stroke-width="3" stroke-dasharray="6,4"/><polygon points="190,215 225,240 190,265" fill="#F5B301"/><text x="200" y="360" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#E5E5E5" text-anchor="middle">${cleanTitle.length > 20 ? cleanTitle.substring(0, 18) + '...' : cleanTitle}</text><text x="200" y="390" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#F5B301" text-anchor="middle" letter-spacing="2">${cleanSubtitle.toUpperCase()}</text><rect x="160" y="420" width="80" height="3" rx="1.5" fill="#FFD966"/></svg>`;
@@ -151,7 +151,7 @@
     return {
       id: item.id || 'hero_item',
       title: localized.title || 'Featured Presentation',
-      description: localized.description || 'Watch now exclusively on Community OTT.',
+      description: localized.description || 'Watch now exclusively on The Dappu: Community OTT.',
       assets: {
         '16_9': assets['16_9'] || assets['3_2'] || assets['2_3'],
         '3_1': assets['3_1'],
@@ -184,7 +184,7 @@
     return {
       id: item.random_value || item.id || Math.random().toString(),
       title: localized.title || 'Untitled Movie',
-      description: localized.description || 'Explore premium community cinema and exclusive series.',
+      description: localized.description || 'Explore premium community cinema and exclusive series on The Dappu.',
       ageRating: item.ageRating || 'U/A 13+',
       duration: item.duration || '2h 14m',
       year: item.year || '2025',
