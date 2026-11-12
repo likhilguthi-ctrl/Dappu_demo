@@ -31,7 +31,7 @@
   function createFallbackPosterSvg(title, subtitle = 'Community OTT') {
     const cleanTitle = (title || 'Featured Title').replace(/[<>&"]/g, '');
     const cleanSubtitle = subtitle.replace(/[<>&"]/g, '');
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%"><defs><linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2B2B2B"/><stop offset="50%" stop-color="#181818"/><stop offset="100%" stop-color="#141414"/></linearGradient><radialGradient id="goldGlow" cx="50%" cy="30%" r="50%"><stop offset="0%" stop-color="#F5B301" stop-opacity="0.35"/><stop offset="100%" stop-color="#F5B301" stop-opacity="0"/></radialGradient></defs><rect width="400" height="600" fill="url(#bgGrad)"/><rect width="400" height="600" fill="url(#goldGlow)"/><circle cx="200" cy="240" r="64" fill="#202020" stroke="#F5B301" stroke-width="3" stroke-dasharray="6,4"/><polygon points="190,215 225,240 190,265" fill="#F5B301"/><text x="200" y="360" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#E5E5E5" text-anchor="middle">${cleanTitle.length > 20 ? cleanTitle.substring(0, 18) + '...' : cleanTitle}</text><text x="200" y="390" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#F59E0B" text-anchor="middle" letter-spacing="2">${cleanSubtitle.toUpperCase()}</text><rect x="160" y="420" width="80" height="3" rx="1.5" fill="#FFD966"/></svg>`;
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%"><defs><linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2B2B2B"/><stop offset="50%" stop-color="#181818"/><stop offset="100%" stop-color="#141414"/></linearGradient><radialGradient id="goldGlow" cx="50%" cy="30%" r="50%"><stop offset="0%" stop-color="#F5B301" stop-opacity="0.35"/><stop offset="100%" stop-color="#F5B301" stop-opacity="0"/></radialGradient></defs><rect width="400" height="600" fill="url(#bgGrad)"/><rect width="400" height="600" fill="url(#goldGlow)"/><circle cx="200" cy="240" r="64" fill="#202020" stroke="#F5B301" stroke-width="3" stroke-dasharray="6,4"/><polygon points="190,215 225,240 190,265" fill="#F5B301"/><text x="200" y="360" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#E5E5E5" text-anchor="middle">${cleanTitle.length > 20 ? cleanTitle.substring(0, 18) + '...' : cleanTitle}</text><text x="200" y="390" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#F5B301" text-anchor="middle" letter-spacing="2">${cleanSubtitle.toUpperCase()}</text><rect x="160" y="420" width="80" height="3" rx="1.5" fill="#FFD966"/></svg>`;
     return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
   }
 
@@ -48,9 +48,9 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
         <defs>
           <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#2A2319"/>
-            <stop offset="40%" stop-color="#202020"/>
-            <stop offset="100%" stop-color="#141414"/>
+            <stop offset="0%" stop-color="#262626"/>
+            <stop offset="40%" stop-color="#181818"/>
+            <stop offset="100%" stop-color="#101010"/>
           </linearGradient>
           <radialGradient id="glow" cx="70%" cy="40%" r="60%">
             <stop offset="0%" stop-color="#F5B301" stop-opacity="0.3"/>
@@ -81,6 +81,8 @@
     watchlist: new Set(JSON.parse(localStorage.getItem('ott_demo_watchlist') || '[]')),
     activeModalItem: null,
     isPlayingSimulatedVideo: false,
+    isNavClickScrolling: false,
+    navClickScrollTimer: null,
   };
 
   // ── 4. DOM Elements Cache ─────────────────────────────────────────────
@@ -98,9 +100,13 @@
     searchInput: document.getElementById('searchInput'),
     searchClearBtn: document.getElementById('searchClearBtn'),
     heroSection: document.getElementById('heroSection'),
-    heroCarouselStage: document.getElementById('heroCarouselStage'),
+    heroBanner: document.getElementById('heroBanner'),
+    heroContentBox: document.getElementById('heroContentBox'),
     heroArrowLeft: document.getElementById('heroArrowLeft'),
     heroArrowRight: document.getElementById('heroArrowRight'),
+    heroIndicators: document.getElementById('heroIndicators'),
+    heroWatchBtn: document.getElementById('heroWatchBtn'),
+    heroInfoBtn: document.getElementById('heroInfoBtn'),
     mainContentContainer: document.getElementById('mainContentContainer'),
     railsContainer: document.getElementById('railsContainer'),
     searchResultsSection: document.getElementById('searchResultsSection'),
@@ -212,60 +218,6 @@
     });
   }
 
-  // Metadata & icons for Curated Channel / Genre Hubs (Modern Streaming Standard)
-  const CATEGORY_HUB_META = {
-    sec_av: {
-      icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`,
-      sub_en: 'Leaders & Scholars',
-      sub_te: 'నాయకులు & ప్రముఖులు'
-    },
-    sec_songs: {
-      icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`,
-      sub_en: 'Folk & Heritage',
-      sub_te: 'జానపద & విప్లవ గీతాలు'
-    },
-    sec_podcast: {
-      icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>`,
-      sub_en: 'Conversations & Talks',
-      sub_te: 'ప్రత్యేక ఇంటర్వ్యూలు'
-    },
-    sec_education: {
-      icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`,
-      sub_en: 'Youth & Empowerment',
-      sub_te: 'యువత & విద్య'
-    },
-    sec_web: {
-      icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>`,
-      sub_en: 'Cinema & Documentaries',
-      sub_te: 'సినిమాలు & కథనాలు'
-    },
-    personalities: {
-      icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`,
-      sub_en: 'Leaders & Scholars',
-      sub_te: 'నాయకులు & ప్రముఖులు'
-    },
-    songs: {
-      icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>`,
-      sub_en: 'Folk & Heritage',
-      sub_te: 'జానపద & విప్లవ గీతాలు'
-    },
-    podcasts: {
-      icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>`,
-      sub_en: 'Conversations & Talks',
-      sub_te: 'ప్రత్యేక ఇంటర్వ్యూలు'
-    },
-    education: {
-      icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>`,
-      sub_en: 'Youth & Empowerment',
-      sub_te: 'యువత & విద్య'
-    },
-    films: {
-      icon: `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>`,
-      sub_en: 'Cinema & Documentaries',
-      sub_te: 'సినిమాలు & కథనాలు'
-    }
-  };
-
   function renderCategoryQuickNav() {
     const nav = document.getElementById('categoryQuickNav');
     if (!nav) return;
@@ -280,23 +232,7 @@
     nav.innerHTML = sections.map((section) => {
       const localized = getLocalizedSection(section, state.currentLanguage);
       if (!localized || localized.content.length === 0) return '';
-      const meta = CATEGORY_HUB_META[localized.id] || {
-        icon: `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>`,
-        sub_en: 'Collection',
-        sub_te: 'విభాగం'
-      };
-      const sub = state.currentLanguage === 'te' ? meta.sub_te : meta.sub_en;
-      return `
-        <a class="category-quick-link" href="#section-${localized.id}" data-category-target="${localized.id}">
-          <div class="category-hub-badge">
-            <span class="category-hub-icon">${meta.icon}</span>
-          </div>
-          <div class="category-hub-text-wrap">
-            <span class="category-hub-title">${localized.title}</span>
-            <span class="category-hub-sub">${sub}</span>
-          </div>
-        </a>
-      `;
+      return `<a class="category-quick-link" href="#section-${localized.id}" data-category-target="${localized.id}">${localized.title}</a>`;
     }).join('');
 
     nav.querySelectorAll('.category-quick-link').forEach((link) => {
@@ -304,8 +240,20 @@
         event.preventDefault();
         const target = document.getElementById(`section-${link.dataset.categoryTarget}`);
         if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          state.isNavClickScrolling = true;
+          if (state.navClickScrollTimer) clearTimeout(state.navClickScrollTimer);
+          state.navClickScrollTimer = setTimeout(() => {
+            state.isNavClickScrolling = false;
+          }, 950);
           updateActiveSectionLink(link.dataset.categoryTarget);
+
+          const headerHeight = elements.appHeader?.offsetHeight || 64;
+          const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = Math.max(0, elementPosition - headerHeight - 12);
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
         }
       });
     });
@@ -349,8 +297,6 @@
           localStorage.setItem('ott_demo_lang', selected);
           closeLanguageDropdown();
           renderLanguageDropdown();
-          renderSectionNavigation();
-          renderCategoryQuickNav();
           renderHeroCarousel();
           renderContentRails();
           if (state.searchQuery) {
@@ -377,7 +323,7 @@
     elements.langSelectorBtn.classList.remove('open');
   }
 
-  // ── 8. Render Multi-Box 3D Hero Carousel ──────────────────────────────
+  // ── 8. Render Hero Carousel ───────────────────────────────────────────
   function renderHeroCarousel() {
     const heroes = state.data?.hero_section || [];
     if (heroes.length === 0) {
@@ -386,191 +332,107 @@
     }
     if (elements.heroSection) elements.heroSection.style.display = 'block';
 
-    const stage = elements.heroCarouselStage || document.getElementById('heroCarouselStage');
-    if (!stage) return;
+    const safeIndex = state.currentHeroIndex % heroes.length;
+    const heroItem = getLocalizedHero(heroes[safeIndex], state.currentLanguage);
+    if (!heroItem) return;
 
-    const total = heroes.length;
-    stage.innerHTML = heroes.map((rawHero, i) => {
-      const heroItem = getLocalizedHero(rawHero, state.currentLanguage);
-      if (!heroItem) return '';
+    // Set Banner Background (16:9)
+    const bannerUrl = heroItem.assets['16_9'];
+    if (elements.heroBanner) {
+      elements.heroBanner.style.backgroundImage = `url("${bannerUrl}")`;
+      elements.heroBanner.classList.remove('zoom-active');
+      void elements.heroBanner.offsetWidth; // trigger reflow
+      elements.heroBanner.classList.add('zoom-active');
 
-      const bannerUrl = heroItem.assets['16_9'] || '';
-      const titleLogoUrl = heroItem.assets['3_1'];
+      // Test banner image load; fallback if error
+      const testImg = new Image();
+      testImg.src = bannerUrl;
+      testImg.onerror = () => {
+        elements.heroBanner.style.backgroundImage = `url("${createFallbackBannerSvg(heroItem.title)}")`;
+      };
+    }
 
-      let titleHtml = '';
-      if (titleLogoUrl) {
-        titleHtml = `
-          <img 
-            src="${titleLogoUrl}" 
-            alt="${heroItem.title}" 
-            class="hero-title-logo-img"
-            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
-          />
-          <h1 class="hero-title-text" style="display:none;">${heroItem.title}</h1>
-        `;
-      } else {
-        titleHtml = `<h1 class="hero-title-text">${heroItem.title}</h1>`;
-      }
-
-      const langDisplayBadge = state.availableLanguages.length > 1
-        ? `${state.availableLanguages.length} Languages`
-        : getNativeLanguageName(state.currentLanguage);
-
-      const dotsHtml = total > 1 ? `
-        <div class="hero-indicators-container">
-          ${Array.from({ length: total }).map((_, dotIdx) => `
-            <div class="hero-indicator-dot ${dotIdx === state.currentHeroIndex ? 'active' : ''}" data-index="${dotIdx}"></div>
-          `).join('')}
-        </div>
-      ` : '';
-
-      return `
-        <div class="hero-slide-card" data-hero-index="${i}" title="${heroItem.title}">
-          <div class="hero-banner-image" style="background-image: url('${bannerUrl}');"></div>
-          <div class="hero-left-gradient"></div>
-          <div class="hero-bottom-gradient"></div>
-          <div class="hero-top-gradient"></div>
-          <div class="hero-peeking-overlay"></div>
-          <div class="hero-slide-progress">
-            <div class="hero-slide-progress-bar"></div>
-          </div>
-
-          <div class="hero-brand-logo-container">
-            <img src="assets/brand/community-ott-logo.png" alt="Community Logo"
-              onerror="this.style.display='none';" />
-          </div>
-
-          <div class="hero-content-box">
-            ${titleHtml}
-            <div class="hero-meta-row">
-              <span class="hero-badge hero-badge-age">U/A 13+</span>
-              <span class="hero-badge hero-badge-primary">4K UHD</span>
-              <span class="hero-badge">2h 15m</span>
-              <span class="hero-badge hero-badge-primary">${langDisplayBadge}</span>
-              <span class="hero-badge">Action &bull; Drama</span>
-            </div>
-            <p class="hero-description">${heroItem.description}</p>
-            <div class="hero-actions-row">
-              <button class="hero-btn-primary hero-action-play" data-hero-index="${i}">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-                Watch Now
-              </button>
-              <button class="hero-btn-secondary hero-action-info" data-hero-index="${i}">
-                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"/>
-                  <line x1="12" y1="16" x2="12" y2="12"/>
-                  <line x1="12" y1="8" x2="12.01" y2="8"/>
-                </svg>
-                More Details
-              </button>
-            </div>
-          </div>
-
-          ${dotsHtml}
-        </div>
+    // Build Content Box (Title Logo / text, badges, desc)
+    const titleLogoUrl = heroItem.assets['3_1'];
+    let titleHtml = '';
+    if (titleLogoUrl) {
+      titleHtml = `
+        <img 
+          src="${titleLogoUrl}" 
+          alt="${heroItem.title}" 
+          class="hero-title-logo-img"
+          onerror="this.style.display='none'; document.getElementById('heroFallbackTitleText').style.display='block';"
+        />
+        <h1 id="heroFallbackTitleText" class="hero-title-text" style="display:none;">${heroItem.title}</h1>
       `;
-    }).join('');
+    } else {
+      titleHtml = `<h1 class="hero-title-text">${heroItem.title}</h1>`;
+    }
 
-    attachHeroCardListeners(heroes);
-    updateHeroSlideClasses();
-  }
+    const langDisplayBadge = state.availableLanguages.length > 1
+      ? `${state.availableLanguages.length} Languages`
+      : getNativeLanguageName(state.currentLanguage);
 
-  function attachHeroCardListeners(heroes) {
-    const stage = elements.heroCarouselStage || document.getElementById('heroCarouselStage');
-    if (!stage) return;
+    elements.heroContentBox.innerHTML = `
+      ${titleHtml}
+      <div class="hero-meta-row">
+        <span class="hero-badge hero-badge-age">U/A 13+</span>
+        <span class="hero-badge hero-badge-primary">4K UHD</span>
+        <span class="hero-badge">2h 15m</span>
+        <span class="hero-badge hero-badge-primary">${langDisplayBadge}</span>
+        <span class="hero-badge">Action &bull; Drama</span>
+      </div>
+      <p class="hero-description">${heroItem.description}</p>
+      <div class="hero-actions-row">
+        <button id="heroPlayActionBtn" class="hero-btn-primary">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+          Watch Now
+        </button>
+        <button id="heroInfoActionBtn" class="hero-btn-secondary">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="16" x2="12" y2="12"/>
+            <line x1="12" y1="8" x2="12.01" y2="8"/>
+          </svg>
+          More Details
+        </button>
+      </div>
+    `;
 
-    stage.querySelectorAll('.hero-slide-card').forEach((card) => {
-      const idx = parseInt(card.dataset.heroIndex, 10);
-      const heroItem = getLocalizedHero(heroes[idx], state.currentLanguage);
-
-      card.querySelector('.hero-action-play')?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if (heroItem) openDetailsModal(heroItem, true);
-      });
-
-      card.querySelector('.hero-action-info')?.addEventListener('click', (e) => {
-        e.stopPropagation();
-        if (heroItem) openDetailsModal(heroItem, false);
-      });
-
-      // Pause auto-advance timer only when user actively hovers on action buttons
-      card.querySelector('.hero-actions-row')?.addEventListener('mouseenter', () => {
-        stopHeroTimer();
-      });
-      card.querySelector('.hero-actions-row')?.addEventListener('mouseleave', () => {
-        startHeroTimer();
-      });
-
-      card.querySelectorAll('.hero-indicator-dot').forEach((dot) => {
-        dot.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const targetIdx = parseInt(dot.dataset.index, 10);
-          goToHero(targetIdx);
-        });
-      });
-
-      card.addEventListener('click', (e) => {
-        if (e.target.closest('.hero-action-play') || e.target.closest('.hero-action-info') || e.target.closest('.hero-indicator-dot')) {
-          return;
-        }
-        if (card.classList.contains('is-prev')) {
-          e.stopPropagation();
-          prevHero();
-        } else if (card.classList.contains('is-next')) {
-          e.stopPropagation();
-          nextHero();
-        }
-      });
+    document.getElementById('heroPlayActionBtn')?.addEventListener('click', () => {
+      openDetailsModal(heroItem, true);
     });
+
+    document.getElementById('heroInfoActionBtn')?.addEventListener('click', () => {
+      openDetailsModal(heroItem, false);
+    });
+
+    // Render Indicator Dots
+    renderHeroIndicators(heroes.length, safeIndex);
   }
 
-  function updateHeroSlideClasses() {
-    const stage = elements.heroCarouselStage || document.getElementById('heroCarouselStage');
-    if (!stage) return;
-    const cards = stage.querySelectorAll('.hero-slide-card');
-    const total = cards.length;
-    if (total === 0) return;
+  function renderHeroIndicators(total, current) {
+    if (!elements.heroIndicators) return;
+    if (total <= 1) {
+      elements.heroIndicators.style.display = 'none';
+      return;
+    }
+    elements.heroIndicators.style.display = 'flex';
+    elements.heroIndicators.innerHTML = Array.from({ length: total })
+      .map(
+        (_, i) =>
+          `<div class="hero-indicator-dot ${i === current ? 'active' : ''}" data-index="${i}"></div>`
+      )
+      .join('');
 
-    const current = (state.currentHeroIndex % total + total) % total;
-    const prev = (current - 1 + total) % total;
-    const next = (current + 1) % total;
-
-    cards.forEach((card) => {
-      const idx = parseInt(card.dataset.heroIndex, 10);
-      card.classList.remove('is-active', 'is-prev', 'is-next', 'is-hidden-left', 'is-hidden-right');
-
-      if (idx === current) {
-        card.classList.add('is-active');
-        const banner = card.querySelector('.hero-banner-image');
-        if (banner) {
-          banner.classList.remove('zoom-active');
-          void banner.offsetWidth;
-          banner.classList.add('zoom-active');
-        }
-        const prog = card.querySelector('.hero-slide-progress-bar');
-        if (prog) {
-          prog.style.animation = 'none';
-          void prog.offsetWidth;
-          prog.style.animation = 'heroProgressBar 3s linear forwards';
-        }
-      } else if (idx === prev) {
-        card.classList.add('is-prev');
-      } else if (idx === next) {
-        card.classList.add('is-next');
-      } else {
-        const diff = (idx - current + total) % total;
-        if (diff > total / 2) {
-          card.classList.add('is-hidden-left');
-        } else {
-          card.classList.add('is-hidden-right');
-        }
-      }
-
-      card.querySelectorAll('.hero-indicator-dot').forEach((dot) => {
-        const dotIdx = parseInt(dot.dataset.index, 10);
-        dot.classList.toggle('active', dotIdx === current);
+    elements.heroIndicators.querySelectorAll('.hero-indicator-dot').forEach((dot) => {
+      dot.addEventListener('click', (e) => {
+        const idx = parseInt(e.currentTarget.getAttribute('data-index'), 10);
+        state.currentHeroIndex = idx;
+        renderHeroCarousel();
+        resetHeroTimer();
       });
     });
   }
@@ -579,7 +441,7 @@
     const heroes = state.data?.hero_section || [];
     if (heroes.length <= 1) return;
     state.currentHeroIndex = (state.currentHeroIndex + 1) % heroes.length;
-    updateHeroSlideClasses();
+    renderHeroCarousel();
     resetHeroTimer();
   }
 
@@ -587,21 +449,13 @@
     const heroes = state.data?.hero_section || [];
     if (heroes.length <= 1) return;
     state.currentHeroIndex = (state.currentHeroIndex - 1 + heroes.length) % heroes.length;
-    updateHeroSlideClasses();
-    resetHeroTimer();
-  }
-
-  function goToHero(targetIdx) {
-    const heroes = state.data?.hero_section || [];
-    if (heroes.length <= 1) return;
-    state.currentHeroIndex = (targetIdx % heroes.length + heroes.length) % heroes.length;
-    updateHeroSlideClasses();
+    renderHeroCarousel();
     resetHeroTimer();
   }
 
   function startHeroTimer() {
     stopHeroTimer();
-    state.heroTimer = setInterval(nextHero, 3000);
+    state.heroTimer = setInterval(nextHero, 6000);
   }
 
   function stopHeroTimer() {
@@ -635,69 +489,17 @@
         const localizedSec = getLocalizedSection(sec, state.currentLanguage);
         if (!localizedSec || localizedSec.content.length === 0) return '';
 
-        const isRanked = secIdx === 0;
         const cardsHtml = localizedSec.content
-          .map((card, cardIdx) => renderCardHtml(card, `sec-${secIdx}`, cardIdx, isRanked))
+          .map((card) => renderCardHtml(card, `sec-${secIdx}`))
           .join('');
 
-        let spotlightHtml = '';
-        if (secIdx === 1) {
-          const isTe = state.currentLanguage === 'te';
-          const spotlightBackdrop = isTe 
-            ? './assets/madiga/banners/te/kanta_rao_banner.jpg' 
-            : './assets/madiga/banners/en/kanta_rao_banner.jpg';
-          spotlightHtml = `
-            <section class="community-spotlight-showcase" id="communitySpotlightShowcase">
-              <div class="spotlight-card">
-                <div class="spotlight-backdrop" style="background-image: url('${spotlightBackdrop}');"></div>
-                <div class="spotlight-gradient"></div>
-                <div class="spotlight-content">
-                  <div class="spotlight-badge-wrap">
-                    <span class="spotlight-badge">★ ${isTe ? 'ఈ వారం ప్రత్యేక ముఖాముఖి' : 'COMMUNITY SPOTLIGHT'}</span>
-                    <span class="spotlight-badge-secondary">${isTe ? 'సినిమా ప్రస్థానం' : 'SPECIAL INTERVIEW'}</span>
-                  </div>
-                  <h2 class="spotlight-title">${isTe ? 'తోట లక్ష్మీ కాంతారావుతో ప్రత్యేక సంభాషణ' : 'A Conversation with Kanta Rao'}</h2>
-                  <div class="spotlight-meta">
-                    <span class="hero-badge hero-badge-age">U/A 13+</span>
-                    <span class="hero-badge hero-badge-primary">4K ULTRA HD</span>
-                    <span class="hero-badge">2h 15m</span>
-                    <span class="hero-badge hero-badge-primary">${isTe ? '2 భాషలు' : '2 Languages'}</span>
-                    <span class="hero-badge">${isTe ? 'సినిమా విశేషాలు' : 'Cinema History'}</span>
-                  </div>
-                  <p class="spotlight-desc">
-                    ${isTe 
-                      ? 'తెలుగు చలనచిత్ర రంగానికి విశేష సేవలందించిన ప్రముఖ నటుడు మరియు సామాజిక నేత కాంతారావుతో ప్రత్యేక సంభాషణ. కళారంగం, ఉద్యమ ప్రస్థానం వెనుక ఉన్న జ్ఞాపకాలు.'
-                      : 'An extraordinary cinematic journey and behind-the-scenes stories with Kanta Rao. Revisiting defining moments, timeless humor, and community advocacy.'}
-                  </p>
-                  <div class="spotlight-actions">
-                    <button class="hero-btn-primary spotlight-play-btn" data-spotlight-id="hero_kanta_rao">
-                      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-                        <path d="M8 5v14l11-7z"/>
-                      </svg>
-                      ${isTe ? 'ఇప్పుడే చూడండి' : 'Watch Feature'}
-                    </button>
-                    <button class="hero-btn-secondary spotlight-info-btn" data-spotlight-id="hero_kanta_rao">
-                      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
-                        <circle cx="12" cy="12" r="10"/>
-                        <line x1="12" y1="16" x2="12" y2="12"/>
-                        <line x1="12" y1="8" x2="12.01" y2="8"/>
-                      </svg>
-                      ${isTe ? 'మరిన్ని వివరాలు' : 'More Details'}
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </section>
-          `;
-        }
-
         return `
-          <section class="homepage-section ${isRanked ? 'is-ranked-section' : ''}" id="section-${localizedSec.id}" data-section-id="${localizedSec.id}">
+          <section class="homepage-section" id="section-${localizedSec.id}" data-section-id="${localizedSec.id}">
             <div class="section-header">
               <div class="section-title-wrap">
                 <h3 class="section-title">
                   <span class="section-title-bar"></span>
-                  ${isRanked ? (state.currentLanguage === 'te' ? 'టాప్ ట్రెండింగ్ ' + localizedSec.title : 'Top 10 in ' + localizedSec.title) : localizedSec.title}
+                  ${localizedSec.title}
                 </h3>
               </div>
               <button class="section-see-all" data-sec-idx="${secIdx}">
@@ -715,7 +517,7 @@
                 </svg>
               </button>
               
-              <div id="rail-${secIdx}" class="horizontal-rail ${isRanked ? 'ranked-rail' : ''}">
+              <div id="rail-${secIdx}" class="horizontal-rail">
                 ${cardsHtml}
               </div>
 
@@ -726,7 +528,6 @@
               </button>
             </div>
           </section>
-          ${spotlightHtml}
         `;
       })
       .join('');
@@ -736,6 +537,7 @@
     if (state.sectionObserver) state.sectionObserver.disconnect();
     if ('IntersectionObserver' in window) {
       state.sectionObserver = new IntersectionObserver((entries) => {
+        if (state.isNavClickScrolling) return;
         const visible = entries.filter((entry) => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
         if (visible) updateActiveSectionLink(visible.target.dataset.sectionId || '');
@@ -771,51 +573,25 @@
         showToast('Viewing full collection section');
       });
     });
-
-    // Attach Spotlight Feature Showcase button handlers
-    elements.railsContainer.querySelectorAll('.spotlight-play-btn, .spotlight-info-btn').forEach((btn) => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const isPlay = btn.classList.contains('spotlight-play-btn');
-        const heroItems = state.data?.hero_section || [];
-        const kantaItem = heroItems.find(h => h.id === 'hero_kanta_rao') || heroItems[0];
-        if (kantaItem) {
-          const loc = getLocalizedHero(kantaItem, state.currentLanguage);
-          openDetailsModal(loc, isPlay);
-        }
-      });
-    });
   }
 
-  function renderCardHtml(card, contextKey, index = 0, isRanked = false) {
+  function renderCardHtml(card, contextKey) {
     const posterUrl = card.assets['2_3'];
     const safeData = JSON.stringify(card).replace(/"/g, '&quot;');
     const fallbackSvg = createFallbackPosterSvg(card.title);
 
-    const rankBadgeHtml = isRanked ? `
-      <div class="card-rank-badge">
-        <span class="rank-number-display">${index + 1}</span>
-      </div>
-    ` : '';
-
-    const trendTag = index === 0 ? 'TOP 1' : (index < 3 ? 'TRENDING' : 'EXCLUSIVE');
-
     return `
-      <div class="content-card-wrap ${isRanked ? 'has-rank' : ''}" data-content="${safeData}">
-        ${rankBadgeHtml}
+      <div class="content-card-wrap" data-content="${safeData}">
         <div class="content-card">
           <div class="card-poster-box">
             <img 
               src="${posterUrl}" 
               class="card-poster-img"
-              loading="${index < 8 ? 'eager' : 'lazy'}"
+              loading="lazy"
               onerror="window.onPosterImgError(this)"
             />
             <div class="card-poster-gradient"></div>
-            <div class="card-top-tags">
-              <span class="card-trend-pill">${trendTag}</span>
-              <span class="card-age-rating">${card.ageRating || 'U/A 13+'}</span>
-            </div>
+            <div class="card-age-rating">${card.ageRating || 'U/A 13+'}</div>
 
             <!-- Centered Dappu / Play Sonic Ripple Hover Overlay -->
             <div class="card-hover-overlay">
@@ -1051,8 +827,37 @@
     elements.headerNav?.addEventListener('click', (event) => {
       const link = event.target.closest('.nav-link');
       if (!link) return;
-      if (link.hasAttribute('data-home-link')) updateActiveSectionLink('');
-      else if (link.dataset.navSection) updateActiveSectionLink(link.dataset.navSection);
+      event.preventDefault();
+
+      // Trigger click pulse animation
+      link.classList.remove('just-clicked');
+      void link.offsetWidth;
+      link.classList.add('just-clicked');
+
+      // Mute scroll listener during smooth scroll so active link stays steady
+      state.isNavClickScrolling = true;
+      if (state.navClickScrollTimer) clearTimeout(state.navClickScrollTimer);
+      state.navClickScrollTimer = setTimeout(() => {
+        state.isNavClickScrolling = false;
+      }, 950);
+
+      const headerHeight = elements.appHeader?.offsetHeight || 64;
+
+      if (link.hasAttribute('data-home-link')) {
+        updateActiveSectionLink('');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else if (link.dataset.navSection) {
+        updateActiveSectionLink(link.dataset.navSection);
+        const target = document.getElementById(`section-${link.dataset.navSection}`);
+        if (target) {
+          const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = Math.max(0, elementPosition - headerHeight - 12);
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      }
     });
     // Header scroll background effect
     window.addEventListener('scroll', () => {
@@ -1101,7 +906,7 @@
       elements.searchToggleBtn.style.display = 'flex';
     });
 
-    // Hero Carousel Arrows (retained for programmatic/fallback use)
+    // Hero Carousel Arrows
     elements.heroArrowLeft?.addEventListener('click', (e) => {
       e.stopPropagation();
       prevHero();
@@ -1112,133 +917,29 @@
       nextHero();
     });
 
-    // ── Unified Drag, Swipe, Wheel & Keyboard Controller for Hero Carousel ──
-    const heroStage = elements.heroCarouselStage || document.getElementById('heroCarouselStage');
-    if (heroStage) {
-      let isDown = false;
-      let startX = 0;
-      let startY = 0;
-      let currentX = 0;
-      let isDrag = false;
-      let hasTriggered = false;
+    // Pause hero timer on mouse hover
+    elements.heroSection?.addEventListener('mouseenter', stopHeroTimer);
+    elements.heroSection?.addEventListener('mouseleave', startHeroTimer);
 
-      const handleStart = (clientX, clientY, target) => {
-        if (target && target.closest('.hero-action-play, .hero-action-info, .hero-indicator-dot')) return;
-        isDown = true;
-        isDrag = false;
-        hasTriggered = false;
-        startX = clientX;
-        startY = clientY;
-        currentX = clientX;
-        stopHeroTimer();
-      };
+    // Touch swipe support for Hero Carousel on Mobile / Touch devices
+    let touchStartX = 0;
+    let touchStartY = 0;
+    elements.heroSection?.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
 
-      const handleMove = (clientX, clientY) => {
-        if (!isDown || hasTriggered) return;
-        currentX = clientX;
-        const diffX = currentX - startX;
-        const diffY = clientY - startY;
-
-        // Verify primary horizontal intention
-        if (Math.abs(diffX) > 10 && Math.abs(diffX) > Math.abs(diffY)) {
-          isDrag = true;
-          heroStage.classList.add('is-dragging');
+    elements.heroSection?.addEventListener('touchend', (e) => {
+      const diffX = e.changedTouches[0].screenX - touchStartX;
+      const diffY = e.changedTouches[0].screenY - touchStartY;
+      if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+        if (diffX < 0) {
+          nextHero();
+        } else {
+          prevHero();
         }
-
-        // Trigger slide shift once threshold is reached
-        if (isDrag && Math.abs(diffX) > 42) {
-          hasTriggered = true;
-          if (diffX < 0) {
-            nextHero(); // drag left -> next slide
-          } else {
-            prevHero(); // drag right -> prev slide
-          }
-        }
-      };
-
-      const handleEnd = () => {
-        if (!isDown) return;
-        isDown = false;
-        heroStage.classList.remove('is-dragging');
-        setTimeout(() => {
-          isDrag = false;
-        }, 80);
-        startHeroTimer();
-      };
-
-      // Mouse drag handlers
-      heroStage.addEventListener('mousedown', (e) => {
-        if (e.button !== 0) return; // only primary left button
-        handleStart(e.clientX, e.clientY, e.target);
-      });
-
-      window.addEventListener('mousemove', (e) => {
-        handleMove(e.clientX, e.clientY);
-      });
-
-      window.addEventListener('mouseup', handleEnd);
-
-      // Touch swipe handlers with full cancellation recovery
-      heroStage.addEventListener('touchstart', (e) => {
-        if (!e.touches || e.touches.length === 0) return;
-        handleStart(e.touches[0].clientX, e.touches[0].clientY, e.target);
-      }, { passive: true });
-
-      heroStage.addEventListener('touchmove', (e) => {
-        if (!e.touches || e.touches.length === 0) return;
-        handleMove(e.touches[0].clientX, e.touches[0].clientY);
-      }, { passive: true });
-
-      heroStage.addEventListener('touchend', handleEnd, { passive: true });
-      heroStage.addEventListener('touchcancel', handleEnd, { passive: true });
-
-      // Suppress accidental card clicks if a drag operation was completed
-      heroStage.addEventListener('click', (e) => {
-        if (isDrag) {
-          e.preventDefault();
-          e.stopPropagation();
-        }
-      }, true);
-
-      // Horizontal trackpad swipe & Shift+MouseWheel scrolling
-      let wheelThrottle = 0;
-      heroStage.addEventListener('wheel', (e) => {
-        const isHorizontal = Math.abs(e.deltaX) > Math.abs(e.deltaY) && Math.abs(e.deltaX) > 18;
-        const isShiftVertical = e.shiftKey && Math.abs(e.deltaY) > 18;
-        if (isHorizontal || isShiftVertical) {
-          e.preventDefault();
-          const now = Date.now();
-          if (now - wheelThrottle > 420) {
-            wheelThrottle = now;
-            const delta = isHorizontal ? e.deltaX : e.deltaY;
-            if (delta > 0) {
-              nextHero();
-            } else {
-              prevHero();
-            }
-          }
-        }
-      }, { passive: false });
-    }
-
-    // Auto-advance visibility lifecycle (pause in background tab, resume on return)
-    document.addEventListener('visibilitychange', () => {
-      if (document.hidden) {
-        stopHeroTimer();
-      } else {
-        resetHeroTimer();
       }
-    });
-
-    // Keyboard navigation (Left / Right Arrow)
-    document.addEventListener('keydown', (e) => {
-      if (state.activeModalItem || e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-      if (e.key === 'ArrowRight') {
-        nextHero();
-      } else if (e.key === 'ArrowLeft') {
-        prevHero();
-      }
-    });
+    }, { passive: true });
 
     // Modal Events
     elements.modalCloseBtn?.addEventListener('click', closeDetailsModal);

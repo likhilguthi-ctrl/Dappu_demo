@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
   <title>Community OTT | Premium Streaming Platform</title>
-  <meta name="theme-color" content="#141414" />
+  <meta name="theme-color" content="#080808" />
   <meta name="description"
     content="The ultimate streaming destination for premium cinema, web series, and exclusive originals celebrating our community." />
   <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
@@ -89,28 +89,46 @@
     </div>
   </header>
 
-  <!-- ── 2. Netflix-style 3D Sectioned Hero Carousel ───────────────────── -->
+  <!-- ── 2. Hotstar Dynamic Hero Carousel ──────────────────────────────── -->
   <section id="heroSection" class="hero-carousel-wrapper">
-    <div class="hero-stage-container">
-      <!-- Carousel Left Navigation Arrow (Outside Central Box) -->
-      <button id="heroArrowLeft" class="hero-nav-arrow hero-nav-arrow-left" aria-label="Previous featured title">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
-          <polyline points="15 18 9 12 15 6" />
-        </svg>
-      </button>
+    <div class="hero-carousel-stage">
+      <div class="hero-carousel-card">
+        <!-- 16:9 Backdrop Layer -->
+        <div id="heroBanner" class="hero-banner-image"></div>
 
-      <!-- Carousel Stage (Holds all sectioned cards in 3D deck) -->
-      <div id="heroCarouselStage" class="hero-carousel-stage"></div>
+        <!-- Layered Dark Vignette Gradients -->
+        <div class="hero-left-gradient"></div>
+        <div class="hero-bottom-gradient"></div>
+        <div class="hero-top-gradient"></div>
 
-      <!-- Carousel Right Navigation Arrow (Outside Central Box) -->
-      <button id="heroArrowRight" class="hero-nav-arrow hero-nav-arrow-right" aria-label="Next featured title">
-        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
-          <polyline points="9 18 15 12 9 6" />
-        </svg>
-      </button>
+        <!-- Hero Brand Logo Overlay -->
+        <div class="hero-brand-logo-container">
+          <img src="assets/brand/community-ott-logo.png" alt="Community Logo"
+            style="max-height: 48px; max-width: 180px; object-fit: contain; filter: drop-shadow(0 4px 14px rgba(0,0,0,0.9));"
+            onerror="this.style.display='none';" />
+        </div>
+
+        <!-- Hero Content Box (Title Logo/Text, Badges, Desc, Actions) -->
+        <div id="heroContentBox" class="hero-content-box"></div>
+
+        <!-- Carousel Left / Right Navigation Arrows -->
+        <button id="heroArrowLeft" class="hero-nav-arrow hero-nav-arrow-left" aria-label="Previous featured title">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </button>
+        <button id="heroArrowRight" class="hero-nav-arrow hero-nav-arrow-right" aria-label="Next featured title">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </button>
+
+        <!-- Slide Progress Indicator Dots -->
+        <div id="heroIndicators" class="hero-indicators-container"></div>
+      </div>
     </div>
 
-    <!-- 5 Category Quick Nav Tiles directly under the hero stage -->
+    <!-- Category Quick Nav Tiles directly under the hero stage -->
     <nav id="categoryQuickNav" class="category-quick-nav" aria-label="Browse categories"></nav>
   </section>
 
@@ -136,9 +154,6 @@
 
       <div id="searchResultsGrid" class="search-results-grid"></div>
     </section>
-
-    <!-- Quick category navigation for content sections -->
-    <nav id="categoryQuickNav" class="category-quick-nav" aria-label="Browse categories"></nav>
 
     <!-- Dynamic Content Sections Container (Rendered from sample.json) -->
     <div id="railsContainer"></div>
