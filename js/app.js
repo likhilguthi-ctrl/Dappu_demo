@@ -722,16 +722,17 @@
     // Watchlist state
     updateWatchlistButtonState(item.id);
 
-    // Player screen backdrop
+    // Player screen backdrop & title
     elements.modalPlayerScreen.style.backgroundImage = `url("${backdropUrl}")`;
+    const topTitle = document.getElementById('playerTopTitle');
+    if (topTitle) topTitle.textContent = item.title;
+
     if (autoPlayVideo) {
-      elements.modalPlayerBox.style.display = 'block';
-      elements.modalPlayBtn.innerHTML = `
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-        Pause
-      `;
+      elements.modalPlayerBox.style.display = 'flex';
+      state.isPlayingSimulatedVideo = true;
     } else {
       elements.modalPlayerBox.style.display = 'none';
+      state.isPlayingSimulatedVideo = false;
       elements.modalPlayBtn.innerHTML = `
         <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
         Play Movie
@@ -747,6 +748,7 @@
     document.body.style.overflow = '';
     state.activeModalItem = null;
     state.isPlayingSimulatedVideo = false;
+    if (elements.modalPlayerBox) elements.modalPlayerBox.style.display = 'none';
   }
 
   function updateWatchlistButtonState(id) {
@@ -958,22 +960,40 @@
 
     elements.modalWatchlistBtn?.addEventListener('click', toggleWatchlist);
 
+    // Launch Video Player from Modal "Play Movie"
     elements.modalPlayBtn?.addEventListener('click', () => {
-      state.isPlayingSimulatedVideo = !state.isPlayingSimulatedVideo;
-      if (state.isPlayingSimulatedVideo) {
-        elements.modalPlayerBox.style.display = 'block';
-        elements.modalPlayBtn.innerHTML = `
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-          Pause
-        `;
-        showToast('Now playing in 1080p Ultra HD with Adaptive HLS');
-      } else {
-        elements.modalPlayBtn.innerHTML = `
-          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-          Resume Movie
-        `;
-      }
+      state.isPlayingSimulatedVideo = true;
+      elements.modalPlayerBox.style.display = 'flex';
+      const topTitle = document.getElementById('playerTopTitle');
+      if (topTitle && state.activeModalItem) topTitle.textContent = state.activeModalItem.title;
+      showToast('Now streaming in 4K UHD Master (Adaptive HLS)');
     });
+
+    // Player Back button (Return to Modal Details Popup cleanly)
+    document.getElementById('playerBackBtn')?.addEventListener('click', () => {
+      state.isPlayingSimulatedVideo = false;
+      elements.modalPlayerBox.style.display = 'none';
+    });
+
+    // Player Close button (Close entire modal)
+    document.getElementById('playerCloseBtn')?.addEventListener('click', () => {
+      closeDetailsModal();
+    });
+
+    // Toggle playback inside player
+    function toggleVideoPlayback() {
+      state.isPlayingSimulatedVideo = !state.isPlayingSimulatedVideo;
+      const toggleIcon = document.getElementById('playerToggleIcon');
+      if (toggleIcon) {
+        toggleIcon.outerHTML = state.isPlayingSimulatedVideo
+          ? `<svg id="playerToggleIcon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>`
+          : `<svg id="playerToggleIcon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`;
+      }
+      showToast(state.isPlayingSimulatedVideo ? 'Resumed playback' : 'Playback paused');
+    }
+
+    document.getElementById('playerToggleBtn')?.addEventListener('click', toggleVideoPlayback);
+    document.getElementById('playerBigPlayBtn')?.addEventListener('click', toggleVideoPlayback);
 
     elements.modalShareBtn?.addEventListener('click', () => {
       navigator.clipboard?.writeText(window.location.href);

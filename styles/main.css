@@ -1532,8 +1532,6 @@ button {
   .hero-content-box { top: 57%; }
   .hero-description { max-width: 58ch; }
   .search-results-grid { grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); }
-  .modal-container { width: min(760px, calc(100vw - 32px)); max-height: 92svh; overflow-y: auto; }
-  .modal-body-content { padding: 20px 22px 26px; }
 }
 
 @media (max-width: 600px) {
@@ -1551,9 +1549,6 @@ button {
   .section-title { font-size: clamp(18px, 5vw, 22px); }
   .content-card-wrap { width: clamp(132px, 40vw, 166px); }
   .search-results-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-  .modal-container { width: calc(100vw - 20px); border-radius: 12px; }
-  .modal-body-content { padding: 16px 16px 22px; }
-  .modal-actions { flex-wrap: wrap; }
 }
 
 /* Narrow foldable cover screens and compact phones. */
@@ -2032,86 +2027,98 @@ button {
 }
 
 /* ══════════════════════════════════════════════════════════════════════
-   DETAILS MODAL — full-bleed image, text + buttons on the LEFT
-   • The image fills the entire modal (right-aligned, full height, never
-     cropped or stretched). Spare space on the left is filled with a blurred
-     copy of the same image.
-   • A dark shadow sits on the image's left side so the title, badges,
-     description and buttons stay readable.
-   • Phones (≤760px): image on top, text below.
+   DETAILS MODAL — Cinematic Landscape Billboard Modal
+   • Desktop/Tablet: Full 16:9 landscape billboard. Subject artwork is on the
+     right, and details text + badges + action buttons are on the LEFT SIDE.
+   • Phones (≤760px): Vertical stack layout for small mobile screens.
    ══════════════════════════════════════════════════════════════════════ */
 .modal-container {
-  width: min(940px, calc(100vw - 32px));
-  max-width: none;
+  position: relative;
+  width: min(980px, calc(100vw - 32px));
+  max-width: 980px;
+  aspect-ratio: 16 / 9;
+  min-height: 480px;
   max-height: calc(100svh - 32px);
-  overflow-x: hidden;
-  overflow-y: auto;
-  background: #111111;
+  overflow: hidden;
+  background: #0e0f14;
   border-radius: 16px;
-  border: 1px solid rgba(245, 179, 1, 0.25);
+  border: 1px solid rgba(245, 179, 1, 0.3);
   box-shadow: 0 25px 70px rgba(0, 0, 0, 0.95);
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 
-/* 16:9 Landscape Banner Header */
+/* 16:9 Landscape Banner Layer */
 .modal-hero-cover {
-  position: relative;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  min-height: 0;
-  max-height: none;
+  height: 100%;
+  aspect-ratio: auto;
   overflow: hidden;
   background-color: #080808;
   background-size: cover;
-  background-position: center center;
+  background-position: center right;
   background-repeat: no-repeat;
-  flex-shrink: 0;
+  z-index: 1;
 }
 
 .modal-hero-gradient {
   position: absolute;
   inset: 0;
-  z-index: 1;
-  background: linear-gradient(180deg, transparent 55%, rgba(17, 17, 17, 0.6) 82%, #111111 100%);
+  z-index: 2;
   pointer-events: none;
+  background: linear-gradient(90deg,
+    rgba(10, 11, 14, 0.98) 0%,
+    rgba(10, 11, 14, 0.92) 38%,
+    rgba(10, 11, 14, 0.55) 56%,
+    rgba(10, 11, 14, 0.12) 75%,
+    transparent 100%
+  ),
+  linear-gradient(0deg, rgba(10, 11, 14, 0.75) 0%, transparent 35%);
 }
 
-/* Modal Body Content underneath the landscape banner */
+/* Modal Body Content positioned on the LEFT SIDE */
 .modal-body-content {
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: min(530px, 54%);
+  z-index: 10;
   box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  padding: 20px clamp(20px, 3.2vw, 36px) 32px;
-  background: #111111;
+  padding: clamp(24px, 4vw, 44px);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
   text-align: left;
   gap: 6px;
+  background: transparent;
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 .modal-body-content > :not(.simulated-player-box) { max-width: 100%; }
 .modal-body-content > .modal-actions { max-width: 100%; }
 
 .modal-title-logo {
   display: block;
-  max-width: min(320px, 100%);
-  max-height: 70px;
+  max-width: min(300px, 100%);
+  max-height: 64px;
   height: auto;
   object-fit: contain;
-  margin: 0 0 4px;
+  margin: 0 0 6px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8));
 }
+
 #modalTitle { 
   font-family: var(--font-family-heading);
-  font-size: clamp(24px, 3.2vw, 34px);
+  font-size: clamp(22px, 3.2vw, 34px);
   font-weight: 800;
-  color: var(--text-heading);
+  color: #ffffff;
   text-align: left; 
-  margin: 0 0 6px; 
-  line-height: 1.2; 
+  margin: 0 0 8px; 
+  line-height: 1.22;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
 }
 
 .modal-meta-row { 
@@ -2119,15 +2126,18 @@ button {
   align-items: center;
   flex-wrap: wrap;
   justify-content: flex-start; 
-  gap: 8px; 
-  margin: 4px 0 10px; 
+  gap: 7px; 
+  margin: 2px 0 12px; 
 }
 
 .modal-description {
-  margin: 0 0 18px;
-  font-size: 15px;
-  line-height: 1.65;
-  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 20px;
+  font-size: clamp(13px, 1.25vw, 15px);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+  max-height: 140px;
+  overflow-y: auto;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
 }
 
 .modal-actions { 
@@ -2136,7 +2146,7 @@ button {
   justify-content: flex-start; 
   gap: 12px; 
   flex-wrap: wrap;
-  margin-bottom: 8px; 
+  margin-bottom: 0; 
 }
 
 .modal-actions .hero-btn-primary,
@@ -2145,34 +2155,275 @@ button {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  height: 44px;
-  padding: 0 22px;
-  font-size: 14px;
+  height: 42px;
+  padding: 0 20px;
+  font-size: 13.5px;
   font-weight: 700;
   line-height: 1;
   white-space: nowrap;
   box-sizing: border-box;
   border-radius: 8px;
 }
-.simulated-player-box { align-self: stretch; width: 100%; margin-top: 16px; text-align: left; }
+
+/* Full Takeover Cinematic Video Player Box */
+.simulated-player-box {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: inherit;
+  z-index: 25;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeInPlayer 0.25s ease-out;
+}
+
+@keyframes fadeInPlayer {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.player-top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, transparent 100%);
+  z-index: 10;
+}
+
+.player-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  padding: 7px 15px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: all 0.2s ease;
+}
+
+.player-back-btn:hover {
+  background: var(--tenant-primary);
+  color: #000000;
+  border-color: var(--tenant-primary);
+}
+
+.player-top-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 50%;
+  text-align: center;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+.player-close-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.player-close-btn:hover {
+  background: rgba(255, 60, 60, 0.85);
+  border-color: rgba(255, 60, 60, 0.85);
+  color: #ffffff;
+}
+
+.simulated-player-screen {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.simulated-player-screen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.65) 100%);
+  pointer-events: none;
+}
+
+.player-big-play {
+  position: relative;
+  z-index: 5;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: var(--tenant-primary);
+  color: #0e0e0e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 0 30px rgba(var(--tenant-primary-rgb), 0.75), 0 4px 14px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+}
+
+.player-big-play:hover {
+  transform: scale(1.12);
+  box-shadow: 0 0 45px rgba(var(--tenant-primary-rgb), 0.95);
+}
+
+.player-live-badge {
+  position: absolute;
+  top: 68px;
+  right: 20px;
+  z-index: 5;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--tenant-primary);
+  box-shadow: 0 0 8px var(--tenant-primary);
+  animation: pulseDot 1.5s infinite;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.player-controls-bar {
+  position: relative;
+  z-index: 10;
+  height: 52px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.8) 100%);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.player-control-icon-btn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 4px;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.player-control-icon-btn:hover {
+  color: var(--tenant-primary);
+  transform: scale(1.1);
+}
+
+.player-progress-bar {
+  flex: 1;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.player-progress-fill {
+  width: 32%;
+  height: 100%;
+  background: var(--tenant-primary);
+  border-radius: 3px;
+  box-shadow: 0 0 10px var(--tenant-primary);
+  transition: width 0.3s ease;
+}
+
+.player-time-code {
+  font-size: 12px;
+  font-family: monospace;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+  white-space: nowrap;
+}
 
 @media (max-width: 760px) {
-  .modal-overlay { padding: 10px; }
+  .modal-overlay { padding: 12px; }
   .modal-container {
-    width: calc(100vw - 20px);
-    max-height: calc(100svh - 20px);
-    border-radius: 12px;
+    width: calc(100vw - 24px);
+    aspect-ratio: auto;
+    min-height: auto;
+    max-height: calc(100svh - 24px);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
   }
   .modal-hero-cover {
-    min-height: 0;
-    max-height: none;
+    position: relative;
+    inset: auto;
+    width: 100%;
     aspect-ratio: 16 / 9;
+    height: auto;
+    flex-shrink: 0;
+  }
+  .modal-hero-gradient {
+    background: linear-gradient(180deg, transparent 40%, rgba(17, 17, 17, 0.85) 80%, #111111 100%);
   }
   .modal-body-content {
+    position: relative;
+    inset: auto;
+    width: 100%;
     padding: 16px 18px 24px;
+    background: #111111;
   }
   .modal-actions { gap: 8px; width: 100%; }
   .modal-actions .hero-btn-primary,
   .modal-actions .hero-btn-secondary { height: 40px; padding: 0 16px; font-size: 13px; }
   .modal-actions .hero-btn-primary { flex: 1 1 100%; }
+  .simulated-player-box {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 35;
+  }
 }
