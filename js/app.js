@@ -31,7 +31,7 @@
   function createFallbackPosterSvg(title, subtitle = 'The Dappu OTT') {
     const cleanTitle = (title || 'Featured Title').replace(/[<>&"]/g, '');
     const cleanSubtitle = subtitle.replace(/[<>&"]/g, '');
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%"><defs><linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2B2B2B"/><stop offset="50%" stop-color="#181818"/><stop offset="100%" stop-color="#141414"/></linearGradient><radialGradient id="goldGlow" cx="50%" cy="30%" r="50%"><stop offset="0%" stop-color="#F5B301" stop-opacity="0.35"/><stop offset="100%" stop-color="#F5B301" stop-opacity="0"/></radialGradient></defs><rect width="400" height="600" fill="url(#bgGrad)"/><rect width="400" height="600" fill="url(#goldGlow)"/><circle cx="200" cy="240" r="64" fill="#202020" stroke="#F5B301" stroke-width="3" stroke-dasharray="6,4"/><polygon points="190,215 225,240 190,265" fill="#F5B301"/><text x="200" y="360" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#E5E5E5" text-anchor="middle">${cleanTitle.length > 20 ? cleanTitle.substring(0, 18) + '...' : cleanTitle}</text><text x="200" y="390" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#F5B301" text-anchor="middle" letter-spacing="2">${cleanSubtitle.toUpperCase()}</text><rect x="160" y="420" width="80" height="3" rx="1.5" fill="#FFD966"/></svg>`;
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" width="100%" height="100%"><defs><linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1E293B"/><stop offset="50%" stop-color="#111827"/><stop offset="100%" stop-color="#0A0E17"/></linearGradient><radialGradient id="primeGlow" cx="50%" cy="30%" r="50%"><stop offset="0%" stop-color="#00A8E1" stop-opacity="0.35"/><stop offset="100%" stop-color="#00A8E1" stop-opacity="0"/></radialGradient></defs><rect width="400" height="600" fill="url(#bgGrad)"/><rect width="400" height="600" fill="url(#primeGlow)"/><circle cx="200" cy="240" r="64" fill="#0F172A" stroke="#00A8E1" stroke-width="3" stroke-dasharray="6,4"/><polygon points="190,215 225,240 190,265" fill="#00A8E1"/><text x="200" y="360" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#E2E8F0" text-anchor="middle">${cleanTitle.length > 20 ? cleanTitle.substring(0, 18) + '...' : cleanTitle}</text><text x="200" y="390" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#00A8E1" text-anchor="middle" letter-spacing="2">${cleanSubtitle.toUpperCase()}</text><rect x="160" y="420" width="80" height="3" rx="1.5" fill="#5CD0FF"/></svg>`;
     return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
   }
 
@@ -48,20 +48,20 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
         <defs>
           <linearGradient id="bannerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#262626"/>
-            <stop offset="40%" stop-color="#181818"/>
-            <stop offset="100%" stop-color="#101010"/>
+            <stop offset="0%" stop-color="#1E293B"/>
+            <stop offset="40%" stop-color="#111827"/>
+            <stop offset="100%" stop-color="#0A0E17"/>
           </linearGradient>
           <radialGradient id="glow" cx="70%" cy="40%" r="60%">
-            <stop offset="0%" stop-color="#F5B301" stop-opacity="0.3"/>
-            <stop offset="100%" stop-color="#F5B301" stop-opacity="0"/>
+            <stop offset="0%" stop-color="#00A8E1" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#00A8E1" stop-opacity="0"/>
           </radialGradient>
         </defs>
         <rect width="1280" height="720" fill="url(#bannerGrad)"/>
         <rect width="1280" height="720" fill="url(#glow)"/>
-        <circle cx="920" cy="360" r="140" fill="#181818" stroke="#F5B301" stroke-width="4" stroke-opacity="0.4"/>
-        <polygon points="900,310 970,360 900,410" fill="#F5B301" opacity="0.8"/>
-        <text x="140" y="380" font-family="'Inter', sans-serif" font-size="44" font-weight="800" fill="#E5E5E5">
+        <circle cx="920" cy="360" r="140" fill="#111827" stroke="#00A8E1" stroke-width="4" stroke-opacity="0.4"/>
+        <polygon points="900,310 970,360 900,410" fill="#00A8E1" opacity="0.85"/>
+        <text x="140" y="380" font-family="'Inter', sans-serif" font-size="44" font-weight="800" fill="#E2E8F0">
           ${cleanTitle}
         </text>
       </svg>
@@ -74,6 +74,7 @@
     data: null,
     availableLanguages: ['en', 'ta'],
     currentLanguage: localStorage.getItem('ott_demo_lang') || 'en',
+    currentTheme: localStorage.getItem('ott_theme') || 'dark',
     currentHeroIndex: 0,
     heroTimer: null,
     sectionObserver: null,
@@ -89,9 +90,12 @@
   const elements = {
     appHeader: document.getElementById('appHeader'),
     brandLogo: document.getElementById('brandLogo'),
+    brandLogoImg: document.querySelector('.brand-logo-img'),
     headerNav: document.getElementById('headerNav'),
     sectionNavLinks: document.getElementById('sectionNavLinks'),
     brandLogoFooter: document.getElementById('brandLogoFooter'),
+    themeToggleBtn: document.getElementById('themeToggleBtn'),
+    themeToggleLabel: document.getElementById('themeToggleLabel'),
     langSelectorBtn: document.getElementById('langSelectorBtn'),
     langSelectorLabel: document.getElementById('langSelectorLabel'),
     langDropdownMenu: document.getElementById('langDropdownMenu'),
@@ -140,6 +144,51 @@
     toastTimer = setTimeout(() => {
       elements.toastBox.classList.remove('show');
     }, 2800);
+  }
+
+  // ── 5b. Dual-Theme Management (Prime Dark / Light) ────────────────────
+  function applyTheme(theme) {
+    const cleanTheme = theme === 'light' ? 'light' : 'dark';
+    state.currentTheme = cleanTheme;
+    localStorage.setItem('ott_theme', cleanTheme);
+    document.documentElement.setAttribute('data-theme', cleanTheme);
+
+    // Update meta theme-color for browser navigation bar
+    const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute('content', cleanTheme === 'light' ? '#F8FAFC' : '#0A0E17');
+    }
+
+    // Update brand logos
+    const logoSrc = cleanTheme === 'light' 
+      ? 'assets/brand/community-ott-logo-light.png' 
+      : 'assets/brand/community-ott-logo-dark.png';
+
+    if (elements.brandLogoImg) {
+      elements.brandLogoImg.src = logoSrc;
+    }
+    if (elements.brandLogoFooter) {
+      elements.brandLogoFooter.src = logoSrc;
+    }
+    const heroBrandLogo = document.getElementById('heroBrandLogoImg');
+    if (heroBrandLogo) {
+      heroBrandLogo.src = logoSrc;
+    }
+
+    // Update toggle button tooltip and label
+    if (elements.themeToggleBtn) {
+      elements.themeToggleBtn.setAttribute('title', cleanTheme === 'light' ? 'Switch to Dark Theme' : 'Switch to Light Theme');
+      elements.themeToggleBtn.setAttribute('aria-label', cleanTheme === 'light' ? 'Switch to Dark Theme' : 'Switch to Light Theme');
+    }
+    if (elements.themeToggleLabel) {
+      elements.themeToggleLabel.textContent = cleanTheme === 'light' ? 'Dark' : 'Light';
+    }
+  }
+
+  function toggleTheme() {
+    const nextTheme = state.currentTheme === 'light' ? 'dark' : 'light';
+    applyTheme(nextTheme);
+    showToast(nextTheme === 'light' ? 'Light Theme Activated' : 'Prime Dark Theme Activated');
   }
 
   // ── 6. Data Helpers (Multilingual & Ratio Normalization) ───────────────
@@ -787,6 +836,9 @@
 
   // ── 12. Main Initialization ───────────────────────────────────────────
   async function init() {
+    // Apply persisted theme preference immediately
+    applyTheme(state.currentTheme);
+
     try {
       const response = await fetch('./sample.json');
       if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
@@ -874,6 +926,12 @@
     elements.langSelectorBtn?.addEventListener('click', (e) => {
       e.stopPropagation();
       toggleLanguageDropdown();
+    });
+
+    // Theme Switcher toggling
+    elements.themeToggleBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleTheme();
     });
 
     document.addEventListener('click', (e) => {
