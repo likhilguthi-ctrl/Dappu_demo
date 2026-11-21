@@ -234,7 +234,7 @@
       id: item.random_value || item.id || Math.random().toString(),
       title: localized.title || 'Untitled Movie',
       description: localized.description || 'Explore premium community cinema and exclusive series on The Dappu.',
-      ageRating: item.ageRating || 'U/A 13+',
+      ageRating: item.ageRating || item.age_rating || 'U/A 13+',
       duration: item.duration || '2h 14m',
       year: item.year || '2025',
       assets: {
@@ -356,6 +356,19 @@
       });
     });
   }
+
+  window.switchLanguage = function (langCode) {
+    if (langCode && state.availableLanguages.includes(langCode)) {
+      state.currentLanguage = langCode;
+      localStorage.setItem('ott_demo_lang', langCode);
+      closeLanguageDropdown();
+      renderLanguageDropdown();
+      renderHeroCarousel();
+      renderContentRails();
+      renderSectionNavigation();
+      renderCategoryQuickNav();
+    }
+  };
 
   function toggleLanguageDropdown() {
     const isOpen = elements.langDropdownMenu.classList.contains('show');

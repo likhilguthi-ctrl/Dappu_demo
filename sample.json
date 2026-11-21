@@ -26,126 +26,116 @@
       ]
     },
     {
-      "id": "hero_tenneti_krishna_prasad",
+      "id": "hero_chindu_yakshaganam",
       "language_specific_values": [
         {
           "language": "en",
-          "title": "Tenneti Krishna Prasad, IPS",
-          "description": "Former DGP, LIDCAP Chairman, and beacon of administrative justice. An inspiring journey of discipline and community empowerment.",
+          "title": "Chindu Yakshaganam: Heritage in Motion",
+          "description": "The vibrant, dramatic folk theater form preserving centuries-old mythological narratives, dance, and cultural theater.",
           "assets": {
-            "16_9": "./assets/madiga/banners/en/tenneti_krishna_prasad_banner.jpg",
-            "2_3": "./assets/madiga/posters/en/tenneti_krishna_prasad.jpg",
-            "3_2": "./assets/madiga/banners/en/tenneti_krishna_prasad_banner.jpg"
+            "16_9": "./assets/culture/banners/en/culture_chindu_yakshaganam_banner_en.png",
+            "2_3": "./assets/culture/posters/en/culture_chindu_yakshaganam_poster_en.png"
           }
         },
         {
           "language": "te",
-          "title": "తెన్నేటి కృష్ణ ప్రసాద్, ఐపీఎస్",
-          "description": "లిడ్ క్యాప్ దిక్సూచి తెన్నేటి! మాజీ డీజీపీ మరియు సమాజ సాధికారత మార్గదర్శి యొక్క సమగ్ర జీవన ప్రస్థానం.",
+          "title": "చిందు యక్షగానం",
+          "description": "వందల ఏళ్ల ప్రాచీన జానపద నాట్య సంప్రదాయం, వేషధారణ, నటన మరియు పౌరాణిక కథా ప్రదర్శనల అద్భుత దృశ్యం.",
           "assets": {
-            "16_9": "./assets/madiga/banners/te/tenneti_krishna_prasad_banner.jpg",
-            "2_3": "./assets/madiga/posters/te/tenneti_krishna_prasad.jpg",
-            "3_2": "./assets/madiga/banners/te/tenneti_krishna_prasad_banner.jpg"
+            "16_9": "./assets/culture/banners/te/culture_chindu_yakshaganam_banner_te.png",
+            "2_3": "./assets/culture/posters/te/culture_chindu_yakshaganam_poster_te.png"
           }
         }
       ]
     },
     {
-      "id": "hero_ks_jawahar",
+      "id": "hero_neet_jee_prep",
       "language_specific_values": [
         {
           "language": "en",
-          "title": "K.S. Jawahar",
-          "description": "From grassroots educator to cabinet minister: SC Commission Chairman K.S. Jawahar on transformative public service.",
+          "title": "NEET & JEE Preparation Pathway",
+          "description": "Strategic roadmap, expert masterclasses, and top mentorship guiding community aspirants into premier national medical and engineering institutes.",
           "assets": {
-            "16_9": "./assets/madiga/banners/en/ks_jawahar_banner.jpg",
-            "2_3": "./assets/madiga/posters/en/ks_jawahar.jpg",
-            "3_2": "./assets/madiga/banners/en/ks_jawahar_banner.jpg"
+            "16_9": "./assets/education/banners/en/edu_neet_jee_prep_banner_en.png",
+            "2_3": "./assets/education/posters/en/edu_neet_jee_prep_poster_en.png"
           }
         },
         {
           "language": "te",
-          "title": "కే.ఎస్. జవహర్",
-          "description": "ఉపాధ్యాయుడి నుంచి మంత్రి వరకు! ఎస్సీ కమిషన్ చైర్మన్‌తో ప్రత్యేక ఇంటర్వ్యూ మరియు ప్రజా సేవ.",
+          "title": "నీట్ & జేఈఈ సిద్ధత మార్గం",
+          "description": "టాప్ మెంటార్ల క్లాసులు, ప్రిపరేషన్ వ్యూహాలు మరియు జాతీయ స్థాయి విద్యా సంస్థల్లో సీట్ల సాధన బాట.",
           "assets": {
-            "16_9": "./assets/madiga/banners/te/ks_jawahar_banner.jpg",
-            "2_3": "./assets/madiga/posters/te/ks_jawahar.jpg",
-            "3_2": "./assets/madiga/banners/te/ks_jawahar_banner.jpg"
+            "16_9": "./assets/education/banners/te/edu_neet_jee_prep_banner_te.png",
+            "2_3": "./assets/education/posters/te/edu_neet_jee_prep_poster_te.png"
           }
         }
       ]
     },
     {
-      "id": "hero_joopaka_subhadra",
+      "id": "hero_edumudi_1994",
       "language_specific_values": [
         {
           "language": "en",
-          "title": "Joopaka Subhadra",
-          "description": "Pioneering voice of Dalit feminist literature, poetry, and identity. Reflecting on three decades of creative assertion and social change.",
+          "title": "Edumudi 1994: Rally of Resistance",
+          "description": "The monumental historical drama chronicling the grassroots spark and unstoppable momentum of the 1994 Edumudi convention.",
           "assets": {
-            "16_9": "./assets/madiga/banners/en/joopaka_subhadra_banner.jpg",
-            "2_3": "./assets/madiga/posters/en/joopaka_subhadra.jpg",
-            "3_2": "./assets/madiga/banners/en/joopaka_subhadra_banner.jpg"
+            "16_9": "./assets/films/banners/en/film_edumudi_1994_banner_en.png",
+            "2_3": "./assets/films/posters/en/film_edumudi_1994_poster_en.png"
           }
         },
         {
           "language": "te",
-          "title": "జూపాక సుభద్ర",
-          "description": "మా కథలు... మా అక్షరాలు! మాదిగ మహిళల అస్తిత్వం, దళిత సాహిత్యం మరియు మూడు దశాబ్దాల అనుభవాలు.",
+          "title": "ఎడుముడి 1994",
+          "description": "1994 చారిత్రక ఎడుముడి సభ, సామాజిక న్యాయ పోరాటం మరియు చైతన్య తరంగాల నేపథ్య సినిమా.",
           "assets": {
-            "16_9": "./assets/madiga/banners/te/joopaka_subhadra_banner.jpg",
-            "2_3": "./assets/madiga/posters/te/joopaka_subhadra.jpg",
-            "3_2": "./assets/madiga/banners/te/joopaka_subhadra_banner.jpg"
+            "16_9": "./assets/films/banners/te/film_edumudi_1994_banner_te.png",
+            "2_3": "./assets/films/posters/te/film_edumudi_1994_poster_te.png"
           }
         }
       ]
     },
     {
-      "id": "hero_undavalli_sridevi",
+      "id": "hero_dappu_craftsmanship",
       "language_specific_values": [
         {
           "language": "en",
-          "title": "Dr. Undavalli Sridevi",
-          "description": "From clinical healer to fearless legislator: Dr. Undavalli Sridevi shares her journey in healthcare and social politics.",
+          "title": "Dappu Craftsmanship: Making the Instrument",
+          "description": "The sacred craft, rhythmic pulse, and ancestral artisanal legacy behind crafting the authentic community Dappu drum.",
           "assets": {
-            "16_9": "./assets/madiga/banners/en/undavalli_sridevi_banner.jpg",
-            "2_3": "./assets/madiga/posters/en/undavalli_sridevi.jpg",
-            "3_2": "./assets/madiga/banners/en/undavalli_sridevi_banner.jpg"
+            "16_9": "./assets/culture/banners/en/culture_dappu_craftsmanship_banner_en.png",
+            "2_3": "./assets/culture/posters/en/culture_dappu_craftsmanship_poster_en.png"
           }
         },
         {
           "language": "te",
-          "title": "డా. ఉండవల్లి శ్రీదేవి",
-          "description": "వైద్యురాలి నుంచి రాజకీయ నాయకురాలిగా... రాజనీతి డాక్టరమ్మ ప్రత్యేక ప్రస్థానం మరియు సేవా తత్వాలు.",
+          "title": "దప్పు వాద్య నిర్మాణం – తయారీలోని నైపుణ్యం",
+          "description": "పవిత్రమైన సంప్రదాయ దప్పు తయారీ విధానం, చర్మ కళా నైపుణ్యం మరియు చారిత్రక సామాజిక స్వరమాధ్యమం.",
           "assets": {
-            "16_9": "./assets/madiga/banners/te/undavalli_sridevi_banner.jpg",
-            "2_3": "./assets/madiga/posters/te/undavalli_sridevi.jpg",
-            "3_2": "./assets/madiga/banners/te/undavalli_sridevi_banner.jpg"
+            "16_9": "./assets/culture/banners/te/culture_dappu_craftsmanship_banner_te.png",
+            "2_3": "./assets/culture/posters/te/culture_dappu_craftsmanship_poster_te.png"
           }
         }
       ]
     },
     {
-      "id": "hero_jayadhir_thirumala_rao",
+      "id": "hero_first_graduate",
       "language_specific_values": [
         {
           "language": "en",
-          "title": "Prof. Jayadhir Thirumala Rao",
-          "description": "Cultural architect and folklorist. Preserving indigenous musical instruments, tribal oral epics, and Dalit cultural heritage.",
+          "title": "The First Graduate: A Hopeful Journey",
+          "description": "An emotional cinematic journey of a rural youth striving against all odds to become the very first college graduate in his village.",
           "assets": {
-            "16_9": "./assets/madiga/banners/en/jayadhir_thirumala_rao_banner.jpg",
-            "2_3": "./assets/madiga/posters/en/jayadhir_thirumala_rao.jpg",
-            "3_2": "./assets/madiga/banners/en/jayadhir_thirumala_rao_banner.jpg"
+            "16_9": "./assets/films/banners/en/film_first_graduate_banner_en.png",
+            "2_3": "./assets/films/posters/en/film_first_graduate_poster_en.png"
           }
         },
         {
           "language": "te",
-          "title": "జయధీర్ తిరుమలరావు",
-          "description": "కళల బ్రహ్మ జయధీరుడు! ఆదివాసీ మరియు దళిత సంగీత వారసత్వ సంరక్షణ ప్రయాణం.",
+          "title": "మొదటి గ్రాడ్యుయేట్",
+          "description": "గ్రామంలో తొలి పట్టభద్రుడిగా నిలవడానికి ఓ యువకుడు సాగించిన పోరాటం, పల్లె ప్రజల ఆశల చలనచిత్రం.",
           "assets": {
-            "16_9": "./assets/madiga/banners/te/jayadhir_thirumala_rao_banner.jpg",
-            "2_3": "./assets/madiga/posters/te/jayadhir_thirumala_rao.jpg",
-            "3_2": "./assets/madiga/banners/te/jayadhir_thirumala_rao_banner.jpg"
+            "16_9": "./assets/films/banners/te/film_first_graduate_banner_te.png",
+            "2_3": "./assets/films/posters/te/film_first_graduate_poster_te.png"
           }
         }
       ]
@@ -158,12 +148,12 @@
         {
           "language": "en",
           "title": "Community Personalities",
-          "description": "Profiles and interviews featuring prominent Madiga leaders, ministers, and public figures."
+          "description": "Profiles and interviews featuring prominent community leaders, pioneers, ministers, and public figures."
         },
         {
           "language": "te",
           "title": "సమాజ ప్రముఖులు",
-          "description": "మాదిగ సమాజ నాయకులు, మంత్రులు, ప్రజా ప్రతినిధుల ప్రత్యేక పరిచయాలు, ముఖాముఖులు."
+          "description": "సమాజ నాయకులు, మంత్రులు, ప్రజా ప్రతినిధుల ప్రత్యేక పరిచయాలు మరియు ముఖాముఖులు."
         }
       ],
       "description": "Community Personalities",
@@ -459,295 +449,277 @@
       ]
     },
     {
-      "id": "sec_songs",
+      "id": "sec_culture",
       "language_specific_values": [
         {
           "language": "en",
-          "title": "Songs",
-          "description": "Soulful folk melodies, revolutionary songs, and rhythm of the Dappu celebrating Dalit and Madiga heritage."
+          "title": "Culture",
+          "description": "Explore ancestral rhythms, folk theater, leathercraft, and living traditions of our community."
         },
         {
           "language": "te",
-          "title": "పాటలు",
-          "description": "దళిత, మాదిగ సాంస్కృతిక వారసత్వాన్ని, డప్పు దరువులను మరియు పోరాట స్ఫూర్తిని కీర్తించే జానపద, విప్లవ గీతాలు."
+          "title": "సంస్కృతి",
+          "description": "మన సముదాయపు ప్రాచీన కళలు, దప్పు నాదం, చిందు యక్షగానం మరియు జానపద సంప్రదాయాల సమాహారం."
         }
       ],
-      "description": "Songs",
+      "description": "Culture",
       "content": [
         {
-          "random_value": "item_song_1",
-          "age_rating": "U",
-          "duration": "4m 12s",
-          "year": "2024",
-          "languages_content": [
-            {
-              "language": "en",
-              "title": "Comrade Dappu Ramesh Tribute Song",
-              "description": "In memory of Comrade Dappu Ramesh: Iconic JNM & CNM revolutionary folk anthem celebrating people’s resistance and cultural heritage.",
-              "assets": {
-                "2_3": "./assets/madiga/posters/en/song_1.jpg",
-                "16_9": "./assets/madiga/banners/en/song_1_banner.jpg"
-              }
-            },
-            {
-              "language": "te",
-              "title": "అమరుడు కామ్రేడ్ డప్పు రమేష్ అన్న స్మృతి లో",
-              "description": "అమరుడు కామ్రేడ్ డప్పు రమేష్ అన్న స్మృతి లో జేఎన్‌ఎం, సీఎన్‌ఎం సమర్పించిన సుప్రసిద్ధ ప్రజా విప్లవ పోరాట గీతం.",
-              "assets": {
-                "2_3": "./assets/madiga/posters/te/song_1.jpg",
-                "16_9": "./assets/madiga/banners/te/song_1_banner.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "random_value": "item_song_2",
-          "age_rating": "U",
-          "duration": "5m 28s",
-          "year": "2023",
-          "languages_content": [
-            {
-              "language": "en",
-              "title": "O Red Flag, Red Salutes to You",
-              "description": "A powerful, fiery revolutionary anthem dedicated to the red flag and grassroots martyrs by Janavani cultural wing.",
-              "assets": {
-                "2_3": "./assets/madiga/posters/en/song_2.jpg",
-                "16_9": "./assets/madiga/banners/en/song_2_banner.jpg"
-              }
-            },
-            {
-              "language": "te",
-              "title": "ఓ అరుణ పతాకమా నీకివిగో రెడ్ సెల్యూట్స్",
-              "description": "రక్తసిక్త ఎర్రజెండాకు, ఉద్యమ అమరవీరులకు సమర్పించిన ఉద్వేగభరిత విప్లవ నివాళి గీతం.",
-              "assets": {
-                "2_3": "./assets/madiga/posters/te/song_2.jpg",
-                "16_9": "./assets/madiga/banners/te/song_2_banner.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "random_value": "item_song_3",
-          "age_rating": "U",
-          "duration": "3m 45s",
-          "year": "2024",
-          "languages_content": [
-            {
-              "language": "en",
-              "title": "Madiga Dandora Cultural Troupe",
-              "description": "The roaring rhythm of Dappu and Daruvu: vibrant community celebration of indigenous folk drums and Telangana rhythms.",
-              "assets": {
-                "2_3": "./assets/madiga/posters/en/song_3.jpg",
-                "16_9": "./assets/madiga/banners/en/song_3_banner.jpg"
-              }
-            },
-            {
-              "language": "te",
-              "title": "మాదిగ దండోరా దళం - డప్పు, దరువు, సప్పుడు",
-              "description": "మాదిగ దండోరా కళాకారుల డప్పు దరువు, శ్రామిక జన చప్పుడు మరియు సంస్కృతి ఉత్సవం.",
-              "assets": {
-                "2_3": "./assets/madiga/posters/te/song_3.jpg",
-                "16_9": "./assets/madiga/banners/te/song_3_banner.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "random_value": "item_song_4",
-          "age_rating": "U",
-          "duration": "4m 50s",
-          "year": "2024",
-          "languages_content": [
-            {
-              "language": "en",
-              "title": "Aadudam Dappulo Daruveyyara",
-              "description": "High-energy folk dance track bringing the stage alive with the thunderous resonance of Telangana daph drums.",
-              "assets": {
-                "2_3": "./assets/madiga/posters/en/song_4.jpg",
-                "16_9": "./assets/madiga/banners/en/song_4_banner.jpg"
-              }
-            },
-            {
-              "language": "te",
-              "title": "ఆడుదాం డప్పులో దరువెయ్యరా... (జానపద గీతం)",
-              "description": "వేదికను హోరెత్తించే డప్పు దరువుల జానపద నృత్య గీతం, శ్రామిక జన ఉత్సాహం.",
-              "assets": {
-                "2_3": "./assets/madiga/posters/te/song_4.jpg",
-                "16_9": "./assets/madiga/banners/te/song_4_banner.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "random_value": "item_song_5",
+          "random_value": "culture_dappu_craftsmanship",
           "age_rating": "U/A 13+",
-          "duration": "5m 15s",
-          "year": "2024",
+          "duration": "1h 45m",
+          "year": "2025",
           "languages_content": [
             {
               "language": "en",
-              "title": "Dalitha Pululamma - Tigers of Resistance",
-              "description": "Martyrs memorial anthem honoring the brave souls of the Dalit resistance movement at Rudhirakshetram.",
+              "title": "Dappu Craftsmanship: Making the Instrument",
+              "description": "The sacred craft, rhythmic pulse, and ancestral artisanal legacy behind crafting the authentic community Dappu drum.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/song_5.jpg",
-                "16_9": "./assets/madiga/banners/en/song_5_banner.jpg"
+                "2_3": "./assets/culture/posters/en/culture_dappu_craftsmanship_poster_en.png",
+                "16_9": "./assets/culture/banners/en/culture_dappu_craftsmanship_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "దళిత పులులమ్మా (రుధిరక్షేత్రం స్మృతి గీతం)",
-              "description": "రుధిరక్షేత్రం అమరుల స్మృతిలో దళిత ప్రతిఘటన పోరాట వీరులను స్మరించుకునే స్ఫూర్తిదాయక గీతం.",
+              "title": "దప్పు వాద్య నిర్మాణం – తయారీలోని నైపుణ్యం",
+              "description": "పవిత్రమైన సంప్రదాయ దప్పు తయారీ విధానం, చర్మ కళా నైపుణ్యం మరియు చారిత్రక సామాజిక స్వరమాధ్యమం.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/song_5.jpg",
-                "16_9": "./assets/madiga/banners/te/song_5_banner.jpg"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "sec_podcast",
-      "language_specific_values": [
-        {
-          "language": "en",
-          "title": "Podcasts & Interviews",
-          "description": "Exclusive in-depth studio podcast conversations with key architects and leaders of the Madiga movement."
-        },
-        {
-          "language": "te",
-          "title": "పాడ్‌కాస్ట్‌లు & ముఖాముఖులు",
-          "description": "ఎమ్మార్పీఎస్ ఉద్యమ నిర్మాతలు, దళిత నాయకులతో ప్రత్యేక సమగ్ర స్టూడియో సంభాషణలు మరియు ముఖాముఖులు."
-        }
-      ],
-      "description": "Podcasts",
-      "content": [
-        {
-          "random_value": "item_podcast_1",
-          "age_rating": "U",
-          "duration": "42m 18s",
-          "year": "2024",
-          "languages_content": [
-            {
-              "language": "en",
-              "title": "1994 – The Genesis of MRPS | Dandu Veerayya Madiga",
-              "description": "In-depth historical discussion with Dandu Veerayya Madiga on the seminal founding moments, ideology, and launch of MRPS in 1994.",
-              "assets": {
-                "2_3": "./assets/madiga/posters/en/podcast_1.jpg",
-                "16_9": "./assets/madiga/banners/en/podcast_1_banner.jpg"
-              }
-            },
-            {
-              "language": "te",
-              "title": "1994 – ఎమ్మార్పీఎస్ ఆవిర్భావం! | దండు వీరయ్య మాదిగ",
-              "description": "1994లో ఎమ్మార్పీఎస్ చారిత్రక ఆవిర్భావం, సైద్ధాంతిక పునాదులు మరియు తొలి ఉద్యమ ప్రస్థానంపై దండు వీరయ్య మాదిగతో సమగ్ర సంభాషణ.",
-              "assets": {
-                "2_3": "./assets/madiga/posters/te/podcast_1.jpg",
-                "16_9": "./assets/madiga/banners/te/podcast_1_banner.jpg"
+                "2_3": "./assets/culture/posters/te/culture_dappu_craftsmanship_poster_te.png",
+                "16_9": "./assets/culture/banners/te/culture_dappu_craftsmanship_banner_te.png"
               }
             }
           ]
         },
         {
-          "random_value": "item_podcast_2",
-          "age_rating": "U",
-          "duration": "38m 45s",
+          "random_value": "culture_dappu_expression",
+          "age_rating": "U/A 13+",
+          "duration": "1h 32m",
           "year": "2024",
           "languages_content": [
             {
               "language": "en",
-              "title": "The Untold Story Behind Madiga Corporation | Kommuri Kanakarao Madiga",
-              "description": "Kommuri Kanakarao Madiga takes us backstage through the policy battles, administrative negotiations, and vision that established the Madiga Corporation.",
+              "title": "Dappu: The Drum of Community Expression",
+              "description": "Exploring the cultural heartbeat and socio-political identity forged through generations of community drummers.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/podcast_2.jpg",
-                "16_9": "./assets/madiga/banners/en/podcast_2_banner.jpg"
+                "2_3": "./assets/culture/posters/en/culture_dappu_expression_poster_en.png",
+                "16_9": "./assets/culture/banners/en/culture_dappu_expression_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "మాదిగ కార్పొరేషన్ వెనుక అసలు కథ! | కొమ్మూరి కనకారావు మాదిగ",
-              "description": "మాదిగ కార్పొరేషన్ ఏర్పాటు వెనుక జరిగిన తెరవెనుక పోరాటాలు, విధాన నిర్ణయాలు మరియు కార్యాచరణపై కొమ్మూరి కనకారావు మాదిగ ప్రత్యేక విశ్లేషణ.",
+              "title": "దప్పు: సముదాయపు స్వరమాధ్యం",
+              "description": "తరతరాల సంస్కృతి, జీవన పోరాటం మరియు దప్పు మోత వెనుక ఉన్న సామాజిక చైతన్య ప్రయాణం.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/podcast_2.jpg",
-                "16_9": "./assets/madiga/banners/te/podcast_2_banner.jpg"
+                "2_3": "./assets/culture/posters/te/culture_dappu_expression_poster_te.png",
+                "16_9": "./assets/culture/banners/te/culture_dappu_expression_banner_te.png"
               }
             }
           ]
         },
         {
-          "random_value": "item_podcast_3",
-          "age_rating": "U",
-          "duration": "45m 10s",
-          "year": "2024",
+          "random_value": "culture_chindu_yakshaganam",
+          "age_rating": "U/A 13+",
+          "duration": "2h 10m",
+          "year": "2025",
           "languages_content": [
             {
               "language": "en",
-              "title": "How Was MRPS Formed in 1994? | Krupakar Madiga",
-              "description": "Founding recollections, crucial mobilization rallies, and grassroots organizing secrets revealed by leader Krupakar Madiga.",
+              "title": "Chindu Yakshaganam: Heritage in Motion",
+              "description": "The vibrant, dramatic folk theater form preserving centuries-old mythological narratives, dance, and cultural theater.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/podcast_3.jpg",
-                "16_9": "./assets/madiga/banners/en/podcast_3_banner.jpg"
+                "2_3": "./assets/culture/posters/en/culture_chindu_yakshaganam_poster_en.png",
+                "16_9": "./assets/culture/banners/en/culture_chindu_yakshaganam_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "1994లో ఎమ్మార్పీఎస్ ఎలా ఏర్పడింది? | కృపాకర్ మాదిగ",
-              "description": "1994లో ఉద్యమ పునాది పడిన రోజులు, సభలు, ప్రజల్లోకి ఉద్యమాన్ని తీసుకువెళ్లిన వ్యూహాలపై కృపాకర్ మాదిగ ప్రత్యక్ష అనుభవాలు.",
+              "title": "చిందు యక్షగానం",
+              "description": "వందల ఏళ్ల ప్రాచీన జానపద నాట్య సంప్రదాయం, వేషధారణ, నటన మరియు పౌరాణిక కథా ప్రదర్శనల అద్భుత దృశ్యం.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/podcast_3.jpg",
-                "16_9": "./assets/madiga/banners/te/podcast_3_banner.jpg"
+                "2_3": "./assets/culture/posters/te/culture_chindu_yakshaganam_poster_te.png",
+                "16_9": "./assets/culture/banners/te/culture_chindu_yakshaganam_banner_te.png"
               }
             }
           ]
         },
         {
-          "random_value": "item_podcast_4",
-          "age_rating": "U",
-          "duration": "51m 30s",
+          "random_value": "culture_dandora_protest",
+          "age_rating": "U/A 13+",
+          "duration": "1h 55m",
           "year": "2024",
           "languages_content": [
             {
               "language": "en",
-              "title": "A Movement's History in Song | Dappu Ramesh",
-              "description": "Legendary cultural pioneer Dappu Ramesh shares how song, rhythm, and poetry sustained the heartbeat of the people's struggle for generations.",
+              "title": "Dandora: Sound, Protest and Public Voice",
+              "description": "The historic resonance of public announcement turning into an unstoppable movement for social dignity and constitutional justice.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/podcast_4.jpg",
-                "16_9": "./assets/madiga/banners/en/podcast_4_banner.jpg"
+                "2_3": "./assets/culture/posters/en/culture_dandora_protest_poster_en.png",
+                "16_9": "./assets/culture/banners/en/culture_dandora_protest_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "ఆ పాటలో ఒక ఉద్యమ చరిత్ర ఉంది! | డప్పు రమేష్",
-              "description": "సంగీతం, కవిత్వం, డప్పు దరువు ఎలా ఉద్యమానికి జీవనాడిగా నిలిచాయో వివరించిన ప్రముఖ సాంస్కృతిక సారథి డప్పు రమేష్ అంతరంగం.",
+              "title": "దండోరా: శబ్దం, నిరసన మరియు ప్రజల గొంతుక",
+              "description": "ప్రజా గళం, చైతన్య బాట మరియు ఆత్మగౌరవ పోరాటంలో దండోరా సాధించిన చారిత్రక విజయాలు.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/podcast_4.jpg",
-                "16_9": "./assets/madiga/banners/te/podcast_4_banner.jpg"
+                "2_3": "./assets/culture/posters/te/culture_dandora_protest_poster_te.png",
+                "16_9": "./assets/culture/banners/te/culture_dandora_protest_banner_te.png"
               }
             }
           ]
         },
         {
-          "random_value": "item_podcast_5",
-          "age_rating": "U",
-          "duration": "58m 20s",
-          "year": "2024",
+          "random_value": "culture_gosangi_performance",
+          "age_rating": "U/A 13+",
+          "duration": "1h 28m",
+          "year": "2025",
           "languages_content": [
             {
               "language": "en",
-              "title": "The Relentless Struggle for Rights | Manda Krishna Madiga",
-              "description": "A flagship exclusive interview with Manda Krishna Madiga on three decades of mobilization, SC classification battles, and future vision.",
+              "title": "Gosangi Performance Tradition",
+              "description": "A deep dive into the nomadic performance arts, balladeers, and musical narratives preserved across Telangana and Andhra.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/podcast_5.jpg",
-                "16_9": "./assets/madiga/banners/en/podcast_5_banner.jpg"
+                "2_3": "./assets/culture/posters/en/culture_gosangi_performance_poster_en.png",
+                "16_9": "./assets/culture/banners/en/culture_gosangi_performance_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "మాదిగల హక్కుల కోసం అలుపెరగని పోరాటం! | మంద కృష్ణ మాదిగ",
-              "description": "మూడు దశాబ్దాల ఉద్యమ ప్రస్థానం, ఎస్సీ వర్గీకరణ పోరు మరియు జాతి ఆత్మగౌరవ దిశపై మంద కృష్ణ మాదిగతో ప్రత్యేక ముఖాముఖి.",
+              "title": "గోసాంగి ప్రదర్శన సంప్రదాయం",
+              "description": "గ్రామీణ సాయంత్రాల్లో గోసాంగి కళాకారుల సంగీతం, కథాగానం మరియు అరుదైన సాంస్కృతిక వారసత్వం.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/podcast_5.jpg",
-                "16_9": "./assets/madiga/banners/te/podcast_5_banner.jpg"
+                "2_3": "./assets/culture/posters/te/culture_gosangi_performance_poster_te.png",
+                "16_9": "./assets/culture/banners/te/culture_gosangi_performance_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "culture_jambavantaru_purana",
+          "age_rating": "U/A 13+",
+          "duration": "1h 50m",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Jambavanthula Kathaprasangam Tradition",
+              "description": "The master oral storytellers reciting epics of cosmic beginnings and ancestral valor with painted scrolls.",
+              "assets": {
+                "2_3": "./assets/culture/posters/en/culture_jambavantaru_purana_poster_en.png",
+                "16_9": "./assets/culture/banners/en/culture_jambavantaru_purana_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "జాంబవంతులు జాంబ పురాణం",
+              "description": "జాంబవ పురాణ మూలాలు, పట ప్రదర్శన మరియు మౌఖిక సంప్రదాయ కథా ప్రసంగాల విశేషాలు.",
+              "assets": {
+                "2_3": "./assets/culture/posters/te/culture_jambavantaru_purana_poster_te.png",
+                "16_9": "./assets/culture/banners/te/culture_jambavantaru_purana_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "culture_dakkali_scroll",
+          "age_rating": "U/A 13+",
+          "duration": "1h 40m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Dakkali Scroll Narration",
+              "description": "Unfurling the legendary illuminated scrolls: visually captivating performance art narrating ancestral legends.",
+              "assets": {
+                "2_3": "./assets/culture/posters/en/culture_dakkali_scroll_poster_en.png",
+                "16_9": "./assets/culture/banners/en/culture_dakkali_scroll_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "డక్కలి చిత్రపట కథనం",
+              "description": "సాయం సంధ్యలో డక్కలి కళాకారుల చిత్రపట ప్రదర్శన, వంశ చరిత్రల గానం మరియు చిత్రకళా సౌందర్యం.",
+              "assets": {
+                "2_3": "./assets/culture/posters/te/culture_dakkali_scroll_poster_te.png",
+                "16_9": "./assets/culture/banners/te/culture_dakkali_scroll_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "culture_leather_craft",
+          "age_rating": "U/A 13+",
+          "duration": "1h 35m",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Madiga Leather Technology & Craftsmanship",
+              "description": "Honoring centuries of indigenous tanning chemistry, leatherwork craftsmanship, and utilitarian mastery.",
+              "assets": {
+                "2_3": "./assets/culture/posters/en/culture_leather_craft_poster_en.png",
+                "16_9": "./assets/culture/banners/en/culture_leather_craft_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మాదిగల తోలు సాంకేతిక విజ్ఞానం",
+              "description": "తరతరాల స్వాభావిక సాంకేతిక పరిజ్ఞానం, తోలు శుద్ధి నైపుణ్యం మరియు దేశీయ ఉత్పత్తి పరిశ్రమ.",
+              "assets": {
+                "2_3": "./assets/culture/posters/te/culture_leather_craft_poster_te.png",
+                "16_9": "./assets/culture/banners/te/culture_leather_craft_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "culture_oral_histories",
+          "age_rating": "U/A 13+",
+          "duration": "2h 05m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Oral Histories of Madiga Villages",
+              "description": "Elders share unwritten memoirs, folk memory, survival songs, and communal wisdom from rural villages.",
+              "assets": {
+                "2_3": "./assets/culture/posters/en/culture_oral_histories_poster_en.png",
+                "16_9": "./assets/culture/banners/en/culture_oral_histories_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మాదిగ గ్రామాల మౌఖిక చరిత్రలు",
+              "description": "గ్రామీణ పెద్దలు పంచుకున్న జీవిత అనుభవాలు, పల్లె జీవన చిత్రాలు మరియు మౌఖిక విజ్ఞానం.",
+              "assets": {
+                "2_3": "./assets/culture/posters/te/culture_oral_histories_poster_te.png",
+                "16_9": "./assets/culture/banners/te/culture_oral_histories_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "culture_women_writers",
+          "age_rating": "U/A 13+",
+          "duration": "1h 48m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Madiga Women Writers: Literature and Memory",
+              "description": "Powerful voices, poetry, and autobiographical narratives documenting lived experiences and feminist resistance.",
+              "assets": {
+                "2_3": "./assets/culture/posters/en/culture_women_writers_poster_en.png",
+                "16_9": "./assets/culture/banners/en/culture_women_writers_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మాదిగ మహిళా రచయిత్రులు",
+              "description": "కవిత్వం, కథలు మరియు ఆత్మకథల ద్వారా మహిళా దృక్కోణంలో సమాజ వాస్తవాలను ఆవిష్కరించిన సాహిత్య ధార.",
+              "assets": {
+                "2_3": "./assets/culture/posters/te/culture_women_writers_poster_te.png",
+                "16_9": "./assets/culture/banners/te/culture_women_writers_banner_te.png"
               }
             }
           ]
@@ -760,184 +732,272 @@
         {
           "language": "en",
           "title": "Education",
-          "description": "Scholars, writers, and educators documenting heritage and empowering youth."
+          "description": "Empowering future leaders with exam coaching, scholarship guides, IT skills, and study abroad pathways."
         },
         {
           "language": "te",
-          "title": "విద్య & మేధావులు",
-          "description": "చరిత్ర పరిశోధకులు, విద్యావేత్తలు, రచయితల ప్రస్థానం మరియు స్ఫూర్తిదాయక ఆలోచనలు."
+          "title": "విద్య",
+          "description": "భావి తరాల ఉన్నతికి అవసరమైన పరీక్షల ప్రిపరేషన్, స్కాలర్‌షిప్‌లు, కంప్యూటర్ నైపుణ్యాలు మరియు విదేశీ విద్య."
         }
       ],
       "description": "Education",
       "content": [
         {
-          "random_value": "item_edu_gogu_shyamala",
+          "random_value": "edu_neet_jee_prep",
           "age_rating": "U/A 13+",
-          "duration": "48m",
+          "duration": "1h 50m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "NEET & JEE Preparation Pathway",
+              "description": "Strategic roadmap, expert masterclasses, and top mentorship guiding community aspirants into premier national medical and engineering institutes.",
+              "assets": {
+                "2_3": "./assets/education/posters/en/edu_neet_jee_prep_poster_en.png",
+                "16_9": "./assets/education/banners/en/edu_neet_jee_prep_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "నీట్ & జేఈఈ సిద్ధత మార్గం",
+              "description": "టాప్ మెంటార్ల క్లాసులు, ప్రిపరేషన్ వ్యూహాలు మరియు జాతీయ స్థాయి విద్యా సంస్థల్లో సీట్ల సాధన బాట.",
+              "assets": {
+                "2_3": "./assets/education/posters/te/edu_neet_jee_prep_poster_te.png",
+                "16_9": "./assets/education/banners/te/edu_neet_jee_prep_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "edu_digital_skills",
+          "age_rating": "U/A 13+",
+          "duration": "1h 35m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Digital Skills & IT Learning",
+              "description": "Equipping rural and first-generation learners with modern software skills, full-stack programming, and AI tools for global technology careers.",
+              "assets": {
+                "2_3": "./assets/education/posters/en/edu_digital_skills_poster_en.png",
+                "16_9": "./assets/education/banners/en/edu_digital_skills_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "డిజిటల్ నైపుణ్యాలు & ఐటీ అభ్యాసం",
+              "description": "సాఫ్ట్‌వేర్ కోడింగ్, కంప్యూటర్ నైపుణ్యాలు మరియు ఆధునిక సాంకేతిక ఉద్యోగాలకు సంపూర్ణ మార్గదర్శకత్వం.",
+              "assets": {
+                "2_3": "./assets/education/posters/te/edu_digital_skills_poster_te.png",
+                "16_9": "./assets/education/banners/te/edu_digital_skills_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "edu_study_abroad",
+          "age_rating": "U/A 13+",
+          "duration": "1h 42m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Study Abroad & Fellowships",
+              "description": "Navigating GRE/IELTS, international university applications, Ambedkar overseas scholarships, and research visas.",
+              "assets": {
+                "2_3": "./assets/education/posters/en/edu_study_abroad_poster_en.png",
+                "16_9": "./assets/education/banners/en/edu_study_abroad_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "విదేశీ విద్య & ఫెలోషిప్స్",
+              "description": "అంబేద్కర్ ఓవర్సీస్ స్కాలర్‌షిప్, గ్లోబల్ యూనివర్సిటీల్లో ప్రవేశాలు మరియు విదేశీ ఉన్నత విద్యా అవకాశాలు.",
+              "assets": {
+                "2_3": "./assets/education/posters/te/edu_study_abroad_poster_te.png",
+                "16_9": "./assets/education/banners/te/edu_study_abroad_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "edu_govt_exams",
+          "age_rating": "U/A 13+",
+          "duration": "2h 10m",
           "year": "2024",
           "languages_content": [
             {
               "language": "en",
-              "title": "The Voice of Madiga Women: Gogu Shyamala",
-              "description": "Acclaimed Dalit feminist thinker and author Gogu Shyamala highlights rural Madiga women’s resistance, lived oral narratives, and cultural emancipation.",
+              "title": "Government Exam Preparation Desk",
+              "description": "Comprehensive coaching for UPSC Civil Services, state public service commissions, banking, and staff selection exams.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/education_1.jpg",
-                "16_9": "./assets/madiga/banners/en/education_1_banner.jpg"
+                "2_3": "./assets/education/posters/en/edu_govt_exams_poster_en.png",
+                "16_9": "./assets/education/banners/en/edu_govt_exams_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "మాదిగ మహిళల గొంతుకగా... గోగు శ్యామల పోరాటం",
-              "description": "దళిత స్త్రీవాద రచయిత్రి, ఉద్యమ వైతాళికురాలు గోగు శ్యామల మాదిగ మహిళల ఆత్మగౌరవం, సాహిత్యం మరియు హక్కుల పోరాటం.",
+              "title": "ప్రభుత్వ ఉద్యోగాల పరీక్షల సిద్ధత డెస్క్",
+              "description": "సివిల్ సర్వీసెస్, గ్రూప్ 1, 2 మరియు బ్యాంకింగ్ పరీక్షల్లో విజయానికి సమగ్ర స్టడీ గైడ్ & నిపుణుల సలహాలు.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/education_1.jpg",
-                "16_9": "./assets/madiga/banners/te/education_1_banner.jpg"
+                "2_3": "./assets/education/posters/te/edu_govt_exams_poster_te.png",
+                "16_9": "./assets/education/banners/te/edu_govt_exams_banner_te.png"
               }
             }
           ]
         },
         {
-          "random_value": "item_edu_endluri_sudhakar",
+          "random_value": "edu_higher_research",
           "age_rating": "U/A 13+",
-          "duration": "55m",
+          "duration": "1h 55m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Higher Education & Research",
+              "description": "Ph.D. fellowship opportunities, NET/JRF preparation, research publication protocols, and university professorship pathways.",
+              "assets": {
+                "2_3": "./assets/education/posters/en/edu_higher_research_poster_en.png",
+                "16_9": "./assets/education/banners/en/edu_higher_research_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "ఉన్నత విద్య & పరిశోధన",
+              "description": "యూజీసీ నెట్/జేఆర్‌ఎఫ్ ఫెలోషిప్‌లు, పీహెచ్‌డీ పరిశోధనా మార్గం మరియు సెంట్రల్ యూనివర్సిటీ అవకాశాలు.",
+              "assets": {
+                "2_3": "./assets/education/posters/te/edu_higher_research_poster_te.png",
+                "16_9": "./assets/education/banners/te/edu_higher_research_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "edu_first_gen_grads",
+          "age_rating": "U/A 13+",
+          "duration": "1h 30m",
           "year": "2024",
           "languages_content": [
             {
               "language": "en",
-              "title": "A New Voice for Dalit Literature: Prof. Endluri Sudhakar",
-              "description": "Celebrating the monumental legacy of Prof. Endluri Sudhakar, whose pioneering poetry, research, and voice awakened Dalit consciousness across generations.",
+              "title": "First-Generation Graduate Stories",
+              "description": "Inspiring personal accounts of breaking generational barriers through perseverance, degrees, and community encouragement.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/education_2.jpg",
-                "16_9": "./assets/madiga/banners/en/education_2_banner.jpg"
+                "2_3": "./assets/education/posters/en/edu_first_gen_grads_poster_en.png",
+                "16_9": "./assets/education/banners/en/edu_first_gen_grads_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "దళిత సాహిత్యానికి కొత్త గొంతుక! ఎండ్లూరి సుధాకర్",
-              "description": "దళిత సాహిత్య వైతాళికుడు ప్రొఫెసర్ ఎండ్లూరి సుధాకర్ కవిత్వ సంపుటాలు, చారిత్రక పరిశోధనలు మరియు నూతన సాహిత్య ప్రస్థానం.",
+              "title": "మొదటి తరం పట్టభద్రుల కథలు",
+              "description": "తరాల నిరక్షరాస్యతను అధిగమించి ఉన్నత పట్టభద్రులుగా నిలిచిన యువతీయువకుల ఆదర్శ ప్రయాణం.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/education_2.jpg",
-                "16_9": "./assets/madiga/banners/te/education_2_banner.jpg"
+                "2_3": "./assets/education/posters/te/edu_first_gen_grads_poster_te.png",
+                "16_9": "./assets/education/banners/te/edu_first_gen_grads_banner_te.png"
               }
             }
           ]
         },
         {
-          "random_value": "item_edu_darla",
+          "random_value": "edu_scholarships_guide",
           "age_rating": "U/A 13+",
+          "duration": "1h 25m",
+          "year": "2025",
           "languages_content": [
             {
               "language": "en",
-              "title": "Treasury of Modern Knowledge",
-              "description": "Prof. Darla Venkateswara Rao explores academic excellence, Dalit aesthetics, and research methodology.",
+              "title": "Scholarship & Fee-Reimbursement Guide",
+              "description": "Essential portal walk-throughs for post-matric scholarships, corporate CSR grants, and government fee reimbursements.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/darla_venkateswara_rao.jpg",
-                "16_9": "./assets/madiga/banners/en/darla_venkateswara_rao_banner.jpg"
+                "2_3": "./assets/education/posters/en/edu_scholarships_guide_poster_en.png",
+                "16_9": "./assets/education/banners/en/edu_scholarships_guide_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "ఆధునిక సాహిత్య భాండాగారం",
-              "description": "ప్రొఫెసర్ దార్ల వెంకటేశ్వరరావు పరిశోధనా పత్రాలు మరియు సాహిత్య విశ్లేషణ.",
+              "title": "విద్యా వేతనాలు & ఫీజు రీయింబర్స్మెంట్ మార్గదర్శిని",
+              "description": "ప్రభుత్వ పోస్ట్-మెట్రిక్ ఉపకార వేతనాలు, జాతీయ స్కాలర్‌షిప్ పోర్టల్ మరియు దరఖాస్తు విధానం.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/darla_venkateswara_rao.jpg",
-                "16_9": "./assets/madiga/banners/te/darla_venkateswara_rao_banner.jpg"
+                "2_3": "./assets/education/posters/te/edu_scholarships_guide_poster_te.png",
+                "16_9": "./assets/education/banners/te/edu_scholarships_guide_banner_te.png"
               }
             }
           ]
         },
         {
-          "random_value": "item_edu_joopaka",
+          "random_value": "edu_student_mentorship",
           "age_rating": "U/A 13+",
+          "duration": "1h 40m",
+          "year": "2025",
           "languages_content": [
             {
               "language": "en",
-              "title": "Critique & Consciousness",
-              "description": "Joopaka Subhadra on critical pedagogy and empowering young women through reading and writing.",
+              "title": "Mentorship for School Students",
+              "description": "One-on-one counseling connecting high school students with accomplished university scholars and career leaders.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/joopaka_subhadra.jpg",
-                "16_9": "./assets/madiga/banners/en/joopaka_subhadra_banner.jpg"
+                "2_3": "./assets/education/posters/en/edu_student_mentorship_poster_en.png",
+                "16_9": "./assets/education/banners/en/edu_student_mentorship_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "చేతన - విద్యా వికాసం",
-              "description": "జూపాక సుభద్ర విద్యా మార్గదర్శకత్వం మరియు యువత ఆలోచనా ధోరణి.",
+              "title": "పాఠశాల విద్యార్థులకు మార్గదర్శకత్వం",
+              "description": "పాఠశాల, కళాశాల విద్యార్థులకు వ్యక్తిగత కెరీర్ కౌన్సెలింగ్ మరియు మార్గదర్శకత్వ కార్యక్రమాలు.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/joopaka_subhadra.jpg",
-                "16_9": "./assets/madiga/banners/te/joopaka_subhadra_banner.jpg"
+                "2_3": "./assets/education/posters/te/edu_student_mentorship_poster_te.png",
+                "16_9": "./assets/education/banners/te/edu_student_mentorship_banner_te.png"
               }
             }
           ]
         },
         {
-          "random_value": "item_edu_tenneti",
+          "random_value": "edu_spoken_english",
           "age_rating": "U/A 13+",
+          "duration": "1h 35m",
+          "year": "2024",
           "languages_content": [
             {
               "language": "en",
-              "title": "Leadership & Public Service Preparation",
-              "description": "Tenneti Krishna Prasad IPS mentors aspirants on administrative exams, leadership, and integrity.",
+              "title": "Spoken English & Communication",
+              "description": "Interactive workshops building confidence, interview fluency, and professional workplace communication for Telugu students.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/tenneti_krishna_prasad.jpg",
-                "16_9": "./assets/madiga/banners/en/tenneti_krishna_prasad_banner.jpg"
+                "2_3": "./assets/education/posters/en/edu_spoken_english_poster_en.png",
+                "16_9": "./assets/education/banners/en/edu_spoken_english_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "సివిల్స్ మార్గదర్శనం",
-              "description": "సివిల్స్ మరియు పోటీ పరీక్షల అభ్యర్థులకు తెన్నేటి కృష్ణ ప్రసాద్ ఐపీఎస్ మార్గదర్శనం.",
+              "title": "మాట్లాడే ఇంగ్లీష్ & కమ్యూనికేషన్",
+              "description": "తెలుగు మాధ్యమ విద్యార్థులకు ఆత్మవిశ్వాసంతో ఆంగ్లంలో మాట్లాడటానికి ప్రత్యేక సంభాషణా శిక్షణ.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/tenneti_krishna_prasad.jpg",
-                "16_9": "./assets/madiga/banners/te/tenneti_krishna_prasad_banner.jpg"
+                "2_3": "./assets/education/posters/te/edu_spoken_english_poster_te.png",
+                "16_9": "./assets/education/banners/te/edu_spoken_english_banner_te.png"
               }
             }
           ]
         },
         {
-          "random_value": "item_edu_jawahar",
+          "random_value": "edu_student_rights",
           "age_rating": "U/A 13+",
+          "duration": "1h 45m",
+          "year": "2025",
           "languages_content": [
             {
               "language": "en",
-              "title": "Empowerment Through Learning",
-              "description": "K.S. Jawahar shares insights on government educational reforms and student scholarships.",
+              "title": "Education Rights & Student Support",
+              "description": "Empowering students with knowledge of statutory rights, hostel welfare schemes, and anti-discrimination cell safeguards.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/ks_jawahar.jpg",
-                "16_9": "./assets/madiga/banners/en/ks_jawahar_banner.jpg"
+                "2_3": "./assets/education/posters/en/edu_student_rights_poster_en.png",
+                "16_9": "./assets/education/banners/en/edu_student_rights_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "విద్యతోనే విముక్తి",
-              "description": "ఎస్సీ, ఎస్టీ విద్యార్థుల సంక్షేమ పథకాలు మరియు విద్యారంగ సంస్కరణలు.",
+              "title": "విద్యా హక్కులు & విద్యార్థి సహాయం",
+              "description": "విద్యా సంస్థల్లో చట్టబద్ధమైన హక్కులు, హాస్టల్ సదుపాయాలు మరియు సంక్షేమ పథకాల సమాచారం.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/ks_jawahar.jpg",
-                "16_9": "./assets/madiga/banners/te/ks_jawahar_banner.jpg"
-              }
-            }
-          ]
-        },
-        {
-          "random_value": "item_edu_varaprasad",
-          "age_rating": "U/A 13+",
-          "languages_content": [
-            {
-              "language": "en",
-              "title": "Cultural Literacy & History",
-              "description": "Comrade Varaprasad Wilson on remembering our social reformers and historical pioneers.",
-              "assets": {
-                "2_3": "./assets/madiga/posters/en/varaprasad_wilson.jpg",
-                "16_9": "./assets/madiga/banners/en/varaprasad_wilson_banner.jpg"
-              }
-            },
-            {
-              "language": "te",
-              "title": "సాంస్కృతిక చరిత్ర అధ్యయనం",
-              "description": "చరిత్రను తెలుసుకుందాం: సామాజిక విప్లవకారుల జీవిత విశేషాలు.",
-              "assets": {
-                "2_3": "./assets/madiga/posters/te/varaprasad_wilson.jpg",
-                "16_9": "./assets/madiga/banners/te/varaprasad_wilson_banner.jpg"
+                "2_3": "./assets/education/posters/te/edu_student_rights_poster_te.png",
+                "16_9": "./assets/education/banners/te/edu_student_rights_banner_te.png"
               }
             }
           ]
@@ -945,137 +1005,277 @@
       ]
     },
     {
-      "id": "sec_web",
+      "id": "sec_films",
       "language_specific_values": [
         {
           "language": "en",
-          "title": "Films & Series",
-          "description": "A collection of Telugu films and web series, from comedy and suspense to cinematic tributes."
+          "title": "Films",
+          "description": "Cinematic masterworks, grassroots resistance stories, inspiring biographies, and exclusive community originals."
         },
         {
           "language": "te",
-          "title": "సినిమాలు & సిరీస్‌లు",
-          "description": "హాస్యం, ఉత్కంఠ నుంచి సినీ నివాళుల వరకు తెలుగు సినిమాలు, వెబ్ సిరీస్‌ల సమాహారం."
+          "title": "సినిమాలు",
+          "description": "సామాజిక చైతన్య చిత్రాలు, ఆత్మగౌరవ గాథలు, ఉత్తేజకర జీవిత చరిత్రలు మరియు ప్రత్యేక సినిమాలు."
         }
       ],
-      "description": "Films & Series",
+      "description": "Films",
       "content": [
         {
-          "random_value": "item_film_manda_docu",
+          "random_value": "film_edumudi_1994",
           "age_rating": "U/A 13+",
+          "duration": "2h 15m",
+          "year": "2025",
           "languages_content": [
             {
               "language": "en",
-              "title": "Mahaajana: 30 Years of Struggle",
-              "description": "A landmark cinematic documentary tracing the roots of the categorization movement.",
+              "title": "Edumudi 1994: Rally of Resistance",
+              "description": "The monumental historical drama chronicling the grassroots spark and unstoppable momentum of the 1994 Edumudi convention.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/manda_krishna_madiga.jpg",
-                "16_9": "./assets/madiga/banners/en/manda_krishna_madiga_banner.jpg"
+                "2_3": "./assets/films/posters/en/film_edumudi_1994_poster_en.png",
+                "16_9": "./assets/films/banners/en/film_edumudi_1994_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "మహాజన: 30 ఏళ్ల ఉద్యమ శిఖరం",
-              "description": "మంద కృష్ణ మాదిగ నాయకత్వంలో సాగిన మూడు దశాబ్దాల చారిత్రాత్మక ఉద్యమ డాక్యుమెంటరీ.",
+              "title": "ఎడుముడి 1994",
+              "description": "1994 చారిత్రక ఎడుముడి సభ, సామాజిక న్యాయ పోరాటం మరియు చైతన్య తరంగాల నేపథ్య సినిమా.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/manda_krishna_madiga.jpg",
-                "16_9": "./assets/madiga/banners/te/manda_krishna_madiga_banner.jpg"
+                "2_3": "./assets/films/posters/te/film_edumudi_1994_poster_te.png",
+                "16_9": "./assets/films/banners/te/film_edumudi_1994_banner_te.png"
               }
             }
           ]
         },
         {
-          "random_value": "item_film_tenneti",
+          "random_value": "film_first_graduate",
           "age_rating": "U/A 13+",
+          "duration": "2h 08m",
+          "year": "2025",
           "languages_content": [
             {
               "language": "en",
-              "title": "The Compass of Duty",
-              "description": "An inspiring biographical docudrama on IPS Tenneti Krishna Prasad's policing innovations.",
+              "title": "The First Graduate: A Hopeful Journey",
+              "description": "An emotional cinematic journey of a rural youth striving against all odds to become the very first college graduate in his village.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/tenneti_krishna_prasad.jpg",
-                "16_9": "./assets/madiga/banners/en/tenneti_krishna_prasad_banner.jpg"
+                "2_3": "./assets/films/posters/en/film_first_graduate_poster_en.png",
+                "16_9": "./assets/films/banners/en/film_first_graduate_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "కర్తవ్య దిక్సూచి",
-              "description": "తెన్నేటి కృష్ణ ప్రసాద్ ఐపీఎస్ జీవిత కథ ఆధారంగా రూపొందించిన డాక్యు-డ్రామా.",
+              "title": "మొదటి గ్రాడ్యుయేట్",
+              "description": "గ్రామంలో తొలి పట్టభద్రుడిగా నిలవడానికి ఓ యువకుడు సాగించిన పోరాటం, పల్లె ప్రజల ఆశల చలనచిత్రం.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/tenneti_krishna_prasad.jpg",
-                "16_9": "./assets/madiga/banners/te/tenneti_krishna_prasad_banner.jpg"
+                "2_3": "./assets/films/posters/te/film_first_graduate_poster_te.png",
+                "16_9": "./assets/films/banners/te/film_first_graduate_banner_te.png"
               }
             }
           ]
         },
         {
-          "random_value": "item_film_undavalli",
+          "random_value": "film_jobseeker_founder",
           "age_rating": "U/A 13+",
+          "duration": "1h 58m",
+          "year": "2024",
           "languages_content": [
             {
               "language": "en",
-              "title": "Rajaneethi Doctoramma",
-              "description": "The courageous life journey of Dr. Undavalli Sridevi bridging medicine and politics.",
+              "title": "From Job Seeker to Founder",
+              "description": "A contemporary entrepreneurial saga of transforming rejection into community-driven startups and economic empowerment.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/undavalli_sridevi.jpg",
-                "16_9": "./assets/madiga/banners/en/undavalli_sridevi_banner.jpg"
+                "2_3": "./assets/films/posters/en/film_jobseeker_founder_poster_en.png",
+                "16_9": "./assets/films/banners/en/film_jobseeker_founder_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "రాజనీతి డాక్టరమ్మ: The Healer",
-              "description": "డాక్టర్ ఉండవల్లి శ్రీదేవి జీవితం ఆధారంగా ప్రత్యేక కథనం.",
+              "title": "ఉద్యోగార్ధి నుంచి వ్యవస్థాపకుడిగా",
+              "description": "కష్టాలను అధిగమించి నూతన స్టార్టప్ స్థాపించి పదిమందికి ఉపాధినిచ్చిన వ్యవస్థాపకుని సత్యకథ.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/undavalli_sridevi.jpg",
-                "16_9": "./assets/madiga/banners/te/undavalli_sridevi_banner.jpg"
+                "2_3": "./assets/films/posters/te/film_jobseeker_founder_poster_te.png",
+                "16_9": "./assets/films/banners/te/film_jobseeker_founder_banner_te.png"
               }
             }
           ]
         },
         {
-          "random_value": "item_film_vemula",
+          "random_value": "film_tholi_thaalam",
           "age_rating": "U/A 13+",
+          "duration": "2h 02m",
+          "year": "2025",
           "languages_content": [
             {
               "language": "en",
-              "title": "Praja Prasthanam",
-              "description": "The people's leader: Vemula Veeresham's journey from rural grassroots to the state assembly.",
+              "title": "The First Beat: Drumbeat of Hope",
+              "description": "A poetic musical tribute depicting the timeless connection between rhythm, community identity, and the first beat of awakening.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/vemula_veeresham.jpg",
-                "16_9": "./assets/madiga/banners/en/vemula_veeresham_banner.jpg"
+                "2_3": "./assets/films/posters/en/film_tholi_thaalam_poster_en.png",
+                "16_9": "./assets/films/banners/en/film_tholi_thaalam_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "ప్రజా ప్రస్థానం",
-              "description": "వేముల వీరేశం రాజకీయ పోరాటాల దృశ్యరూపం.",
+              "title": "తొలి తాళం",
+              "description": "సంగీతం, సంప్రదాయం మరియు సాంస్కృతిక అస్తిత్వాన్ని ప్రతిబింబించే అద్భుత సంగీత చలనచిత్రం.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/vemula_veeresham.jpg",
-                "16_9": "./assets/madiga/banners/te/vemula_veeresham_banner.jpg"
+                "2_3": "./assets/films/posters/te/film_tholi_thaalam_poster_te.png",
+                "16_9": "./assets/films/banners/te/film_tholi_thaalam_banner_te.png"
               }
             }
           ]
         },
         {
-          "random_value": "item_film_bonela",
+          "random_value": "film_guardians_manuscript",
           "age_rating": "U/A 13+",
+          "duration": "1h 45m",
+          "year": "2024",
           "languages_content": [
             {
               "language": "en",
-              "title": "Nippu Tunaka: Spark of Youth",
-              "description": "Bonela Vijay Chandra's inspiring political entry and assembly debates for social dignity.",
+              "title": "The Scroll Keepers: Heritage in Focus",
+              "description": "An investigative cultural documentary exploring researchers rescuing ancient palm-leaf scrolls and rare oral manuscripts.",
               "assets": {
-                "2_3": "./assets/madiga/posters/en/bonela_vijay_chandra.jpg",
-                "16_9": "./assets/madiga/banners/en/bonela_vijay_chandra_banner.jpg"
+                "2_3": "./assets/films/posters/en/film_guardians_manuscript_poster_en.png",
+                "16_9": "./assets/films/banners/en/film_guardians_manuscript_banner_en.png"
               }
             },
             {
               "language": "te",
-              "title": "నా జాతి నిప్పు తునక",
-              "description": "శాసనసభలో యువ ప్రజా గొంతుక బోనెల విజయ చంద్ర డాక్యుమెంటరీ.",
+              "title": "గ్రంథ రక్షకులు",
+              "description": "ప్రాచీన తాళపత్ర గ్రంథాలు, లిపులు మరియు అరుదైన సాహిత్య సంపదను కాపాడుతున్న పరిశోధకుల కథ.",
               "assets": {
-                "2_3": "./assets/madiga/posters/te/bonela_vijay_chandra.jpg",
-                "16_9": "./assets/madiga/banners/te/bonela_vijay_chandra_banner.jpg"
+                "2_3": "./assets/films/posters/te/film_guardians_manuscript_poster_te.png",
+                "16_9": "./assets/films/banners/te/film_guardians_manuscript_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "film_hands_remember",
+          "age_rating": "U/A 13+",
+          "duration": "1h 50m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Hands That Remember",
+              "description": "An intimate chronicle highlighting the skilled artisans whose hands molded history, music, and social resilience.",
+              "assets": {
+                "2_3": "./assets/films/posters/en/film_hands_remember_poster_en.png",
+                "16_9": "./assets/films/banners/en/film_hands_remember_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మరువని చేతులు",
+              "description": "శ్రమజీవుల చేతుల నైపుణ్యం, చెమట చుక్కల విలువ మరియు కనుమరుగవుతున్న కళల రక్షణ కథ.",
+              "assets": {
+                "2_3": "./assets/films/posters/te/film_hands_remember_poster_te.png",
+                "16_9": "./assets/films/banners/te/film_hands_remember_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "film_village_language",
+          "age_rating": "U/A 13+",
+          "duration": "1h 38m",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "The Language of the Village",
+              "description": "Capturing the rich dialects, idioms, agrarian folklore, and evocative storytelling traditions of rustic rural Telangana.",
+              "assets": {
+                "2_3": "./assets/films/posters/en/film_village_language_poster_en.png",
+                "16_9": "./assets/films/banners/en/film_village_language_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "పల్లె మాటల భాష",
+              "description": "పల్లెదనపు యాస, జానపద పలుకుబడులు మరియు గ్రామీణ ప్రజల జీవన భావోద్వేగాల సంభాషణ.",
+              "assets": {
+                "2_3": "./assets/films/posters/te/film_village_language_poster_te.png",
+                "16_9": "./assets/films/banners/te/film_village_language_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "film_drum_maker_son",
+          "age_rating": "U/A 13+",
+          "duration": "2h 12m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "The Drum Maker’s Son",
+              "description": "A coming-of-age drama about a young musician harmonizing inherited acoustic drum-making with modern digital sound design.",
+              "assets": {
+                "2_3": "./assets/films/posters/en/film_drum_maker_son_poster_en.png",
+                "16_9": "./assets/films/banners/en/film_drum_maker_son_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "దప్పు కళాకారుడి కొడుకు",
+              "description": "తండ్రి నేర్పిన సాంప్రదాయ వాద్య కళను నేటి ప్రపంచ సంగీత వేదికలకు చేర్చిన యువకుని ప్రయాణం.",
+              "assets": {
+                "2_3": "./assets/films/posters/te/film_drum_maker_son_poster_te.png",
+                "16_9": "./assets/films/banners/te/film_drum_maker_son_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "film_the_archive",
+          "age_rating": "U/A 13+",
+          "duration": "1h 42m",
+          "year": "2024",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "The Archive: Memories in Motion",
+              "description": "Documenting rare photographs, audio recordings, and visual records that capture the defining community moments of the 20th century.",
+              "assets": {
+                "2_3": "./assets/films/posters/en/film_the_archive_poster_en.png",
+                "16_9": "./assets/films/banners/en/film_the_archive_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "ఆర్కైవ్",
+              "description": "అరుదైన ఫోటోలు, పాటల రికార్డులు మరియు నాటి ఉద్యమ పత్రాల సమగ్ర డాక్యుమెంటరీ సమాహారం.",
+              "assets": {
+                "2_3": "./assets/films/posters/te/film_the_archive_poster_te.png",
+                "16_9": "./assets/films/banners/te/film_the_archive_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "film_chindu_night",
+          "age_rating": "U/A 13+",
+          "duration": "2h 00m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "A Night of Chindu",
+              "description": "An immersive backstage look at the transformative makeup rituals, devotional dedication, and midnight performances of Chindu troupes.",
+              "assets": {
+                "2_3": "./assets/films/posters/en/film_chindu_night_poster_en.png",
+                "16_9": "./assets/films/banners/en/film_chindu_night_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "చిందు రాత్రి",
+              "description": "గ్రీన్ రూమ్ ముస్తాబులు, కిరీటధారణ మరియు అర్ధరాత్రి రంగస్థల ప్రదర్శనల అరుదైన అంతరంగ దృశ్యాలు.",
+              "assets": {
+                "2_3": "./assets/films/posters/te/film_chindu_night_poster_te.png",
+                "16_9": "./assets/films/banners/te/film_chindu_night_banner_te.png"
               }
             }
           ]
