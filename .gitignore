@@ -1,0 +1,15 @@
+# Dependencies & Environment
+node_modules/
+.env
+
+# Archives & Temporary Extractions
+*.zip
+assets/extracted/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# OS Files
+.DS_Store
+Thumbs.db

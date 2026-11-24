@@ -139,6 +139,31 @@
           }
         }
       ]
+    },
+    {
+      "id": "hero_dappu_room",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "The Dappu Room: Rhythms & Resistance",
+          "description": "Deep conversations exploring the legacy, sound, social resonance, and rhythmic craftsmanship of the community Dappu.",
+          "assets": {
+            "16_9": "./assets/podcasts/banners/en/podcast_dappu_room_banner_en.png",
+            "2_3": "./assets/podcasts/posters/en/podcast_dappu_room_poster_en.png",
+            "3_2": "./assets/podcasts/banners/en/podcast_dappu_room_banner_en.png"
+          }
+        },
+        {
+          "language": "te",
+          "title": "డప్పు గది – స్వరాల సంభాషణ",
+          "description": "దప్పు వారసత్వం, సామాజిక స్వరాలు, సంప్రదాయ లయలు మరియు సాంస్కృతిక చైతన్య సంభాషణలు.",
+          "assets": {
+            "16_9": "./assets/podcasts/banners/te/podcast_dappu_room_banner_te.png",
+            "2_3": "./assets/podcasts/posters/te/podcast_dappu_room_poster_te.png",
+            "3_2": "./assets/podcasts/banners/te/podcast_dappu_room_banner_te.png"
+          }
+        }
+      ]
     }
   ],
   "content_section": [
@@ -1276,6 +1301,284 @@
               "assets": {
                 "2_3": "./assets/films/posters/te/film_chindu_night_poster_te.png",
                 "16_9": "./assets/films/banners/te/film_chindu_night_banner_te.png"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sec_podcasts",
+      "language_specific_values": [
+        {
+          "language": "en",
+          "title": "Podcasts",
+          "description": "Inspiring conversations, historical archives, cultural dialogues, and grassroots stories."
+        },
+        {
+          "language": "te",
+          "title": "పాడ్‌కాస్ట్‌లు",
+          "description": "స్ఫూర్తిదాయక సంభాషణలు, చారిత్రక రికార్డులు, సాంస్కృతిక చర్చలు మరియు ఉద్యమ స్వరాలు."
+        }
+      ],
+      "description": "Inspiring conversations, historical archives, cultural dialogues, and grassroots stories.",
+      "content": [
+        {
+          "random_value": "podcast_build_with_us",
+          "age_rating": "U/A 13+",
+          "duration": "45m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Build With Us: Voices of Innovation",
+              "description": "Inspiring entrepreneurial journeys, grassroots technology breakthroughs, and innovative community leadership stories.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/en/podcast_build_with_us_poster_en.png",
+                "16_9": "./assets/podcasts/banners/en/podcast_build_with_us_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మనతో కలిసి నిర్మిద్దాం – వ్యాపార స్వరాలు",
+              "description": "సంఘటిత వ్యాపార ప్రయాణాలు, గ్రామీణ సాంకేతిక ఆవిష్కరణలు మరియు స్ఫూర్తిదాయక నాయకత్వ సంభాషణలు.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/te/podcast_build_with_us_poster_te.png",
+                "16_9": "./assets/podcasts/banners/te/podcast_build_with_us_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "podcast_dappu_room",
+          "age_rating": "U/A 13+",
+          "duration": "52m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "The Dappu Room: Rhythms & Resistance",
+              "description": "Deep conversations exploring the legacy, sound, social resonance, and rhythmic craftsmanship of the community Dappu.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/en/podcast_dappu_room_poster_en.png",
+                "16_9": "./assets/podcasts/banners/en/podcast_dappu_room_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "డప్పు గది – స్వరాల సంభాషణ",
+              "description": "దప్పు వారసత్వం, సామాజిక స్వరాలు, సంప్రదాయ లయలు మరియు సాంస్కృతిక చైతన్య సంభాషణలు.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/te/podcast_dappu_room_poster_te.png",
+                "16_9": "./assets/podcasts/banners/te/podcast_dappu_room_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "podcast_first_gen_pros",
+          "age_rating": "U/A 13+",
+          "duration": "1h 10m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "First-Generation Professionals",
+              "description": "Breaking barriers and navigating corporate, administrative, and creative fields as first-generation career leaders.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/en/podcast_first_gen_pros_poster_en.png",
+                "16_9": "./assets/podcasts/banners/en/podcast_first_gen_pros_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మొదటి తరం వృత్తి నిపుణులు",
+              "description": "కార్పొరేట్, ఐఏఎస్, ఐపీఎస్, సాంకేతిక మరియు వైద్య రంగాలలో మొదటి తరంగా విజయాలు సాధించిన నిపుణుల ముఖాముఖి.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/te/podcast_first_gen_pros_poster_te.png",
+                "16_9": "./assets/podcasts/banners/te/podcast_first_gen_pros_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "podcast_madiga_library",
+          "age_rating": "U/A 13+",
+          "duration": "58m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "The Madiga Library Podcast",
+              "description": "Exploring rare manuscripts, oral archives, grassroots publications, and critical community literature.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/en/podcast_madiga_library_poster_en.png",
+                "16_9": "./assets/podcasts/banners/en/podcast_madiga_library_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మాదిగ గ్రంథాలయ సంభాషణలు",
+              "description": "అరుదైన లిఖిత ప్రతులు, మౌఖిక చరిత్ర రికార్డులు, రచనలు మరియు విజ్ఞాన భాండాగార చర్చలు.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/te/podcast_madiga_library_poster_te.png",
+                "16_9": "./assets/podcasts/banners/te/podcast_madiga_library_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "podcast_chindu_stories",
+          "age_rating": "U/A 13+",
+          "duration": "1h 05m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Chindu Stage Stories: Folk Art Voices",
+              "description": "Living masters of Chindu Yakshaganam share behind-the-scenes memories, oral ballads, and performance traditions.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/en/podcast_chindu_stories_poster_en.png",
+                "16_9": "./assets/podcasts/banners/en/podcast_chindu_stories_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "చిందు వేదిక కథలు – జానపద కళారూపాలు",
+              "description": "చిందు యక్షగాన కళాకారుల జీవిత అనుభవాలు, రంగస్థల జ్ఞాపకాలు మరియు సంప్రదాయ జానపద కళా ప్రదర్శనలు.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/te/podcast_chindu_stories_poster_te.png",
+                "16_9": "./assets/podcasts/banners/te/podcast_chindu_stories_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "podcast_dandora_voices",
+          "age_rating": "U/A 13+",
+          "duration": "1h 15m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Voices of Dandora: Movement Chronicles",
+              "description": "The defining history, grassroots organizers, and pivotal moments behind the historic Dandora rights movement.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/en/podcast_dandora_voices_poster_en.png",
+                "16_9": "./assets/podcasts/banners/en/podcast_dandora_voices_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "దండోరా స్వరాలు – ఉద్యమ చైతన్యం",
+              "description": "దండోరా ఉద్యమ పోరాట ఘట్టాలు, నాయకుల అనుభవాలు మరియు సమాన హక్కుల పోరాట చరిత్ర.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/te/podcast_dandora_voices_poster_te.png",
+                "16_9": "./assets/podcasts/banners/te/podcast_dandora_voices_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "podcast_jamba_purana",
+          "age_rating": "U/A 13+",
+          "duration": "48m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Jamba Purana Conversations",
+              "description": "The mythological, cultural, and cosmological oral lineages of Jambavanta told by elder narrative keepers.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/en/podcast_jamba_purana_poster_en.png",
+                "16_9": "./assets/podcasts/banners/en/podcast_jamba_purana_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "జంబ పురాణ సంభాషణలు",
+              "description": "జాంబవంతుని సాంస్కృతిక గాథలు, మౌఖిక పురాణాలు మరియు సృష్టి మూలాల చారిత్రక విశ్లేషణ.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/te/podcast_jamba_purana_poster_te.png",
+                "16_9": "./assets/podcasts/banners/te/podcast_jamba_purana_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "podcast_research_desk",
+          "age_rating": "U/A 13+",
+          "duration": "55m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "The Research Desk: History & Archives",
+              "description": "Scholarly discussions delving into socio-historical research, community historiography, and archival documents.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/en/podcast_research_desk_poster_en.png",
+                "16_9": "./assets/podcasts/banners/en/podcast_research_desk_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "పరిశోధన విభాగం – చరిత్ర మరియు సంస్కృతి",
+              "description": "సామాజిక, చారిత్రక పరిశోధనలు, పురాతన రికార్డులు మరియు మేధావుల మేధోమథన సంభాషణలు.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/te/podcast_research_desk_poster_te.png",
+                "16_9": "./assets/podcasts/banners/te/podcast_research_desk_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "podcast_women_remember",
+          "age_rating": "U/A 13+",
+          "duration": "1h 02m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Women Who Remember: Poetry & Prose",
+              "description": "Celebrated female writers, poets, and activists reflecting on generational memory, songs, and social change.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/en/podcast_women_remember_poster_en.png",
+                "16_9": "./assets/podcasts/banners/en/podcast_women_remember_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "మహిళా స్మృతులు – సాహిత్య సంభాషణ",
+              "description": "కవయిత్రులు, రచయిత్రులు మరియు మహిళా ఉద్యమకారుల జీవిత అనుభవాలు మరియు సాహిత్య స్వరాలు.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/te/podcast_women_remember_poster_te.png",
+                "16_9": "./assets/podcasts/banners/te/podcast_women_remember_banner_te.png"
+              }
+            }
+          ]
+        },
+        {
+          "random_value": "podcast_youth_mic",
+          "age_rating": "U/A 13+",
+          "duration": "42m",
+          "year": "2025",
+          "languages_content": [
+            {
+              "language": "en",
+              "title": "Youth Mic: Telangana & Andhra",
+              "description": "Young scholars, tech builders, artists, and leaders dialogue on student life, career horizons, and civic futures.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/en/podcast_youth_mic_poster_en.png",
+                "16_9": "./assets/podcasts/banners/en/podcast_youth_mic_banner_en.png"
+              }
+            },
+            {
+              "language": "te",
+              "title": "యువ మైక్ – తెలంగాణ & ఆంధ్రప్రదేశ్",
+              "description": "యువతరం ఆలోచనలు, విద్య, ఉద్యోగావకాశాలు, కళారంగం మరియు సమాజ నిర్మాణంలో యువ నాయకత్వం.",
+              "assets": {
+                "2_3": "./assets/podcasts/posters/te/podcast_youth_mic_poster_te.png",
+                "16_9": "./assets/podcasts/banners/te/podcast_youth_mic_banner_te.png"
               }
             }
           ]
